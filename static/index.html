@@ -1,14 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YVZ5KS8WK9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YVZ5KS8WK9');
+  </script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(92898066, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/92898066" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Time to travel</title>
+  <meta name="description" content="Индивидуальный подбор тура в Турцию, ОАЭ, Египет, Черногорию, Тайланд, Гоа, Вьетнам, Доминикану, Сейшелы, Мальдивы, Грузию, Шри-Ланка и другие страны от проверенных туроператоров">
+
+  <link rel="preload" href="fonts/TTCommons-Bold.woff2" as="font" type="fonts/woff2" crossorigin>
+  <link rel="preload" href="fonts/TTCommons-Medium.woff2" as="font" type="fonts/woff2" crossorigin>
+  <link rel="preload" href="fonts/TTCommons-Regular.woff2" as="font" type="fonts/woff2" crossorigin>
+
+  <link type="image/x-icon" rel="shortcut icon" href="img/favicon/favicon.ico">
+  <link type="image/png" sizes="16x16" rel="icon" href="img/favicon/favicon-16x16.png">
+  <link type="image/png" sizes="32x32" rel="icon" href="img/favicon/favicon-32x32.png">
+  <link type="image/png" sizes="96x96" rel="icon" href="img/favicon/favicon-96x96.png">
+  <link type="image/png" sizes="120x120" rel="icon" href="img/favicon/favicon-120x120.png">
+  <link type="image/png" sizes="192x192" rel="icon" href="img/favicon/android-icon-192x192.png">
+
+  <link sizes="57x57" rel="apple-touch-icon" href="img/favicon/apple-touch-icon-57x57.png">
+  <link sizes="60x60" rel="apple-touch-icon" href="img/favicon/apple-touch-icon-60x60.png">
+  <link sizes="72x72" rel="apple-touch-icon" href="img/favicon/apple-touch-icon-72x72.png">
+  <link sizes="76x76" rel="apple-touch-icon" href="img/favicon/apple-touch-icon-76x76.png">
+  <link sizes="114x114" rel="apple-touch-icon" href="img/favicon/apple-touch-icon-114x114.png">
+  <link sizes="120x120" rel="apple-touch-icon" href="img/favicon/apple-touch-icon-120x120.png">
+  <link sizes="144x144" rel="apple-touch-icon" href="img/favicon/apple-touch-icon-144x144.png">
+  <link sizes="152x152" rel="apple-touch-icon" href="img/favicon/apple-touch-icon-152x152.png">
+  <link sizes="180x180" rel="apple-touch-icon" href="img/favicon/apple-touch-icon-180x180.png">
+
+  <link color="#e52037" rel="mask-icon" href="img/favicon/safari-pinned-tab.svg">  
+
+  <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+  <meta name="msapplication-square70x70logo" content="img/favicon/mstile-70x70.png">
+  <meta name="msapplication-square150x150logo" content="img/favicon/mstile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="img/favicon/mstile-310x310.png">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="application-name" content="Time to travel">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Туры по всем направлениям, горящие туры | Турагенство "Time to travel"></title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
 </head>
+
+<!-- Вставить на сайт -->
+<!-- <a href='http://www.resurs.kz/' target='_blank'><img src='http://www.resurs.kz/images/res_ban_88_31_1.gif' border='0' width='88' height='31' alt='Resurs.kz: сайты Казахстана и раскрутка сайта'></a> -->
 <body>
   <header class="header">
     <div class="header__container">
@@ -21,19 +85,19 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
-            <a href="" class="main-nav__list-link">Страны</a>
+            <a href="#" rel=”nofollow” class="main-nav__list-link">Страны</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="" class="main-nav__list-link">Туры</a>
+            <a href="#" rel=”nofollow” class="main-nav__list-link">Туры</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="" class="main-nav__list-link">Новости</a>
+            <a href="#" rel=”nofollow” class="main-nav__list-link">Новости</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="" class="main-nav__list-link">О нас</a>
+            <a href="#" rel=”nofollow” class="main-nav__list-link">О нас</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="" class="main-nav__list-link">Контакты</a>
+            <a href="#" rel=”nofollow” class="main-nav__list-link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -48,6 +112,7 @@
   <main>
     <section class="promo">
       <div class="promo__container">
+        <h1 class="visually-hidden">Поиск туров из Караганды, Астаны и Алматы по всем направлениям</h1>
         <h2 class="promo__title">Хватит&#160;мечтать пора&#160;отдыхать</h2>
         <p class="promo__subtitle">Мы знаем как сделать вашу поездку незабываемой</p>
         <div class="promo__tours">
@@ -79,7 +144,10 @@
           <h2 class="booking__title">Раннее бронирование</h2>
           <p class="booking__subtitle">Если вы любите планировать путешествие заранее, то вам необходимо присмотреться к раннему бронированию</p>
           <div class="booking__image-container">
-            <img src="./img/booking-image.jpg" alt="Раннее бронирование" class="booking__image">
+            <picture>
+              <source type="image/webp" srcset="img/booking-image.webp">
+              <img src="img/booking-image.jpg" width="784" height="588" alt="Раннее бронирование" class="booking__image">
+            </picture>
           </div>
           <div class="booking__content">
             <ul class="booking__list booking-list">
@@ -128,7 +196,10 @@
           <ol class="payment__list payment-list">
             <li class="payment-list__item">
               <div class="payment-list__image-wrapper">
-                <img src="img/payment-image1.png" alt="" class="payment-list__image">
+                <picture>
+                  <source type="image/webp" srcset="img/payment-image1.webp">
+                  <img src="img/payment-image1.png" alt="Договор" width="162" height="162" class="payment-list__image">
+                </picture>
               </div>
               <div class="payment-list__content-wrapper">
                 <h3 class="payment-list__title">
@@ -140,7 +211,10 @@
             </li>
             <li class="payment-list__item payment-list__item-2">
               <div class="payment-list__image-wrapper">
-                <img src="img/payment-image2.png" alt="" class="payment-list__image">
+                <picture>
+                  <source type="image/webp" srcset="img/payment-image2.webp">
+                  <img src="img/payment-image2.png" alt="Предоплата" width="162" height="162" class="payment-list__image">
+                </picture>
               </div>
               <div class="payment-list__content-wrapper">
                 <h3 class="payment-list__title">
@@ -152,7 +226,10 @@
             </li>
             <li class="payment-list__item payment-list__item-3">
               <div class="payment-list__image-wrapper">
-                <img src="img/payment-image3.png" alt="" class="payment-list__image">
+                <picture>
+                  <source type="image/webp" srcset="img/payment-image3.webp">
+                  <img src="img/payment-image3.png" alt="Покупка" width="162" height="162" class="payment-list__image">
+                </picture>
               </div>
               <div class="payment-list__content-wrapper">
                 <h3 class="payment-list__title">
@@ -164,7 +241,10 @@
             </li>
             <li class="payment-list__item payment-list__item-4">
               <div class="payment-list__image-wrapper">
-                <img src="img/payment-image3.png" alt="" class="payment-list__image">
+                <picture>
+                  <source type="image/webp" srcset="img/payment-image4.webp">
+                  <img src="img/payment-image4.png" alt="Документы" width="162" height="162" class="payment-list__image">
+                </picture>
               </div>
               <div class="payment-list__content-wrapper">
                 <h3 class="payment-list__title">
@@ -186,35 +266,50 @@
           <li class="dream-list__item">
             <div class="dream-list__image-wrapper">
               <span class="dream-list__count">1</span>
-              <img src="img/dream-img-1.jpg" alt="Мечта об отдыхе" class="dream-list__image">
+              <picture>
+                <source type="image/webp" srcset="img/dream-img-1.webp">
+                <img src="img/dream-img-1.jpg" alt="Мечта об отдыхе" width="266" height="222" class="dream-list__image">
+              </picture>
             </div>
             <p class="dream-list__text">Вы мечтаете, а мы продумываем всё за вас. Начинаем со знакомства.</p>
           </li>
           <li class="dream-list__item">
             <div class="dream-list__image-wrapper">
               <span class="dream-list__count">2</span>
-              <img src="img/dream-img-2.jpg" alt="Потребности туриста" class="dream-list__image">
+              <picture>
+                <source type="image/webp" srcset="img/dream-img-2.webp">
+                <img src="img/dream-img-2.jpg" alt="Потребности туриста" width="266" height="222" class="dream-list__image">
+              </picture>
             </div>
             <p class="dream-list__text">Вы рассказываете о себе, своем опыте путешествий и своих желаниях</p>
           </li>
           <li class="dream-list__item">
             <div class="dream-list__image-wrapper">
               <span class="dream-list__count">3</span>
-              <img src="img/dream-img-3.jpg" alt="Выбор места для путешествия" class="dream-list__image">
+              <picture>
+                <source type="image/webp" srcset="img/dream-img-3.webp">
+                <img src="img/dream-img-3.jpg" alt="Выбор места для путешествия" width="266" height="222" class="dream-list__image">
+              </picture>
             </div>
             <p class="dream-list__text">Подбираем разные варианты для вас. Выбираем один из них</p>
           </li>
           <li class="dream-list__item dream-list__item-last__child">
             <div class="dream-list__image-wrapper">
               <span class="dream-list__count">4</span>
-              <img src="img/dream-img-4.jpg" alt="Отличный отдых" class="dream-list__image">
+              <picture>
+                <source type="image/webp" srcset="img/dream-img-4.webp">
+                <img src="img/dream-img-4.jpg" alt="Отличный отдых" width="266" height="222" class="dream-list__image">
+              </picture>
             </div>
             <p class="dream-list__text">Вы отправляетесь путешествовать, а мы с вами остаемся на связи.</p>
           </li>
           <li class="dream-list__item">
             <div class="dream-list__image-wrapper">
               <span class="dream-list__count">5</span>
-              <img src="img/dream-img-5.jpg" alt="Сопровождение туристов" class="dream-list__image">
+              <picture>
+                <source type="image/webp" srcset="img/dream-img-5.webp">
+                <img src="img/dream-img-5.jpg" alt="Сопровождение туристов" width="266" height="222" class="dream-list__image">
+              </picture>
             </div>
             <p class="dream-list__text">Прилетаете счастливые с отдыха и делитесь с нами своими впечатлениями</p>
           </li>
@@ -230,17 +325,23 @@
         <div class="hot-tours__container">
           <div class="hot-rours__title-wrapper">
             <h2 class="hot-tours__title">Вся правда о&nbsp;горящих&nbsp;турах</h2>
-            <p class="hot-tours__subtitle">Горящие путёвки - фраза, которая знакома многим. Обычно они рекламируются, как отличный способ дёшево отдохнуть на самых популярных курортах, но стоят они обычно гораздо дешевле обычных туров. Но в каждом хорошем предложении есть свои нюансы.</p>
+            <p class="hot-tours__subtitle">Горящие путёвки - фраза, которая знакома многим. Обычно они рекламируются, как отличный способ дёшево отдохнуть на самых популярных курортах, но стоят они дешевле обычных туров. Но в каждом хорошем предложении есть свои нюансы.</p>
           </div>
           <div class="hot-tours__slider swiper">
             <ul class="hot-tours__list tours-list swiper-wrapper">
               <li class="tours-list__item swiper-slide">
                 <div class="tours-list__image-wrapper">
-                  <img src="img/hot-routs-slider-1.jpg" alt="" class="tours-list__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/hot-routs-slider-1.webp">
+                    <img src="img/hot-routs-slider-1.jpg" alt="Горящий тур" class="tours-list__image">
+                  </picture>
                 </div>
                 <div class="tours-list__content">
                   <div class="tours-list__content-img__wrapper">
-                    <img src="img/hot-tours-true.png" alt="" class="tours-list__content-img">
+                    <picture>
+                      <source type="image/webp" srcset="img/hot-tours-true.webp">
+                      <img src="img/hot-tours-true.png" alt="Правда" width="202" height="202" class="tours-list__content-img">
+                    </picture>
                   </div>
                   <h3 class="tours-list__title">Горящих туров не существует?</h3>
                   <p class="tours-list__text">Горящие туры существовали, существуют и будут существовать. Подводя итог вышеописанной схеме, вы должны были понять, что горящие туры возникают из-за нереализованности запланированных и заранее оплаченных турпакетов. Предугадать такие случаи застоев очень тяжело, поэтому без промахов действительно туроператорам не обойтись. Они и не обходятся. Вопрос только в том, чтобы их максимально минимизировать.</p>
@@ -248,11 +349,17 @@
               </li>
               <li class="tours-list__item swiper-slide">
                 <div class="tours-list__image-wrapper">
-                  <img src="img/hot-routs-slider-1.jpg" alt="" class="tours-list__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/hot-routs-slider-1.webp">
+                    <img src="img/hot-routs-slider-1.jpg" alt="Горящий тур" class="tours-list__image">
+                  </picture>
                 </div>
                 <div class="tours-list__content">
                   <div class="tours-list__content-img__wrapper">
-                    <img src="img/hot-tours-false.png" alt="" class="tours-list__content-img">
+                    <picture>
+                      <source type="image/webp" srcset="img/hot-tours-false.webp">
+                      <img src="img/hot-tours-false.png" alt="Миф" width="205" height="206" class="tours-list__content-img">
+                    </picture>
                   </div>
                   <h3 class="tours-list__title">Горящие туры - это маркетинговая уловка?</h3>
                   <p class="tours-list__text">Доля правды в этом есть, давайте разбираться. Нередко турагенты рекламируют клиентам якобы горящий тур с вылетом через 2 месяца и не по горящим ценам. Либо мошенники, скрывающиеся под видом агенства привлекают клиентов через чур низкими ценами. Манипуляции такого рода подлежат уголовной ответственности. Но на факт существования горящих туров это никак не влияет.</p>
@@ -260,11 +367,17 @@
               </li>
               <li class="tours-list__item swiper-slide">
                 <div class="tours-list__image-wrapper">
-                  <img src="img/hot-routs-slider-1.jpg" alt="" class="tours-list__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/hot-routs-slider-1.webp">
+                    <img src="img/hot-routs-slider-1.jpg" alt="Горящий тур" class="tours-list__image">
+                  </picture>
                 </div>
                 <div class="tours-list__content">
                   <div class="tours-list__content-img__wrapper">
-                    <img src="img/hot-tours-false.png" alt="" class="tours-list__content-img">
+                    <picture>
+                      <source type="image/webp" srcset="img/hot-tours-false.webp">
+                      <img src="img/hot-tours-false.png" alt="Миф" width="205" height="206" class="tours-list__content-img">
+                    </picture>
                   </div>
                   <h3 class="tours-list__title">Горящий тур может появиться за месяц?</h3>
                   <p class="tours-list__text">Как правило горящий тур появляется за несколько дней до вылета, а иногда и того меньше. Поэтому у туристов нет времени даже на сбор чемодана. Если вы любите заранее тонко и тщательно продумывать свой отдых, то лучше не гоняться на горящими предложениями. Но если вы хотите отправиться на отдых немедленно и вам не придётся долго ждать, то это отличная возможность посетить другие страны по низким ценам.</p>
@@ -272,11 +385,17 @@
               </li>
               <li class="tours-list__item swiper-slide">
                 <div class="tours-list__image-wrapper">
-                  <img src="img/hot-routs-slider-1.jpg" alt="" class="tours-list__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/hot-routs-slider-1.webp">
+                    <img src="img/hot-routs-slider-1.jpg" alt="Горящий тур" class="tours-list__image">
+                  </picture>
                 </div>
                 <div class="tours-list__content">
                   <div class="tours-list__content-img__wrapper">
-                    <img src="img/hot-tours-false.png" alt="" class="tours-list__content-img">
+                    <picture>
+                      <source type="image/webp" srcset="img/hot-tours-false.webp">
+                      <img src="img/hot-tours-false.png" alt="Миф" width="205" height="206" class="tours-list__content-img">
+                    </picture>
                   </div>
                   <h3 class="tours-list__title">Горящий туры есть по всем направлениям?</h3>
                   <p class="tours-list__text">Обычно, "горят" самые популярные направления. Чем больше самолётов в сезон летает по массовым направленям, тем больше вероятность что на какой-то рейс будет недобор пассажиров. И всё таки с мелкой периодичностью у туроператоров "горят" разные направления: от Европы, до Латинской Америки. Или по каким-либо определённым причинам, политические ситуации внутри страны, землетресения, цунами, нападение акул, резко снижается спрос. </p>
@@ -284,11 +403,17 @@
               </li>
               <li class="tours-list__item swiper-slide">
                 <div class="tours-list__image-wrapper">
-                  <img src="img/hot-routs-slider-1.jpg" alt="" class="tours-list__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/hot-routs-slider-1.webp">
+                    <img src="img/hot-routs-slider-1.jpg" alt="Горящий тур" width="205" height="206" class="tours-list__image">
+                  </picture>
                 </div>
                 <div class="tours-list__content">
                   <div class="tours-list__content-img__wrapper">
-                    <img src="img/hot-tours-true.png" alt="" class="tours-list__content-img">
+                    <picture>
+                      <source type="image/webp" srcset="img/hot-tours-true.webp">
+                      <img src="img/hot-tours-true.png" alt="Правда" width="202" height="202" class="tours-list__content-img">
+                    </picture>
                   </div>
                   <h3 class="tours-list__title">Горящие туры есть только в безвизовые страны?</h3>
                   <p class="tours-list__text">Так и есть, тур можно поймать только на страну с безвизовым режимом. Для граждан РК, с учётом хорошей полётной программы, таковыми являются - Грузия, Турция, Мальдивы, Малайзия, ОАЭ, Оман, Сейшелы, Черногория. Страны где можно получить визу в аэропорту - Доминиканская Республика, Египет, Тайланд. На этом список не заканчивается, но вероятность поймать горящей тур очень маленькая.</p>
@@ -359,14 +484,14 @@
                 <time class="news-list__date" datetime="2023-03-05">05.03.2023</time>
               </li> -->
               <li class="news-list__item">
-                <a href="articles/2023-03-15.html" class="news-list__link">
+                <a href="articles/restaurants-and-food-in-turkey.html" class="news-list__link">
                   <h3 class="news-list__title">Как выбирать рестораны и блюда путешествуя по Турции</h3>
                 </a>
                 <p class="news-list__text">Путешествие в Турцию - это отличная возможность попробовать местную кухню, которая славится своим разнообразием и вкусом. Вот несколько советов, которые помогут вам выбрать хороший ресторан и насладиться вкусными блюдами во время вашего путешествия...</p>
                 <time class="news-list__date" datetime="2023-03-15">15.03.2023</time>
               </li>
               <li class="news-list__item">
-                <a href="articles/2023-03-07.html" class="news-list__link">
+                <a href="articles/strong-emotions-in-turkey.html" class="news-list__link">
                   <h3 class="news-list__title">Что посетить в Турции, чтобы испытать сильные эмоции</h3>
                 </a>
                 <p class="news-list__text">Турция - это удивительная страна с богатой историей, красивой природой и множеством достопримечательностей. Если вы хотите испытать сильные эмоции во время своего путешествия, то вот несколько мест в Турции, которые стоит посетить...</p>
@@ -374,7 +499,7 @@
               </li>
             </ul>
           <div class="news__button-wrapper">
-            <a href="articles/index.html" class="news__button">Читать все новости</a>
+            <a href="articles/index.html" class="news__button">Читать все статьи</a>
           </div>
         </div>
       </section>
@@ -393,41 +518,41 @@
         <li class="footer__block-list__item footer__block-list__item--tours">
           <ul class="footer__tours footer-tours-list">
             <li class="footer-tours-list__item">
-              <a href="#" class="footer-tours-list__link">Турция</a>
+              <a href="#" rel=”nofollow” class="footer-tours-list__link">Турция</a>
             </li>
             <li class="footer-tours-list__item">
-              <a href="#" class="footer-tours-list__link">ОАЭ</a>
+              <a href="#" rel=”nofollow” class="footer-tours-list__link">ОАЭ</a>
             </li>
             <li class="footer-tours-list__item">
-              <a href="#" class="footer-tours-list__link">Египет</a>
+              <a href="#" rel=”nofollow” class="footer-tours-list__link">Египет</a>
             </li>
             <li class="footer-tours-list__item">
-              <a href="#" class="footer-tours-list__link">Вьетнам</a>
+              <a href="#" rel=”nofollow” class="footer-tours-list__link">Вьетнам</a>
             </li>
             <li class="footer-tours-list__item">
-              <a href="#" class="footer-tours-list__link">Тайланд</a>
+              <a href="#" rel=”nofollow” class="footer-tours-list__link">Тайланд</a>
             </li>
             <li class="footer-tours-list__item">
-              <a href="#" class="footer-tours-list__link">Черногория</a>
+              <a href="#" rel=”nofollow” class="footer-tours-list__link">Черногория</a>
             </li>
           </ul>
         </li>
         <li class="footer__block-list__item footer__block-list__item--menu">
           <ul class="main-nav__list main-nav__list--footer">
             <li class="main-nav__list-item">
-              <a href="" class="main-nav__list-link">Страны</a>
+              <a href="#" rel=”nofollow” class="main-nav__list-link">Страны</a>
             </li>
             <li class="main-nav__list-item">
-              <a href="" class="main-nav__list-link">Туры</a>
+              <a href="#" rel=”nofollow” class="main-nav__list-link">Туры</a>
             </li>
             <li class="main-nav__list-item">
-              <a href="" class="main-nav__list-link">Новости</a>
+              <a href="#" rel=”nofollow” class="main-nav__list-link">Новости</a>
             </li>
             <li class="main-nav__list-item">
-              <a href="" class="main-nav__list-link">О нас</a>
+              <a href="#" rel=”nofollow” class="main-nav__list-link">О нас</a>
             </li>
             <li class="main-nav__list-item">
-              <a href="" class="main-nav__list-link">Контакты</a>
+              <a href="#" rel=”nofollow” class="main-nav__list-link">Контакты</a>
             </li>
           </ul>
         </li>
@@ -437,19 +562,19 @@
           <ul class="footer__socials socials">
             <li class="socials__item">
               <a href="https://www.instagram.com/_timetotravel_krg/" target="_blank" class="socials__link">
-                <img src="img/icon-instagram.svg" alt="Instagram" class="socials__icon">
+                <img src="img/icon-instagram.svg" alt="Instagram" width="43" height="43" class="socials__icon">
                 <span class="visually-hidden">Instagram</span>
               </a>
             </li>
             <li class="socials__item">
-              <a href="#" target="_blank" class="socials__link">
-                <img src="img/icon-facebook.svg" alt="Facebook" class="socials__icon">
+              <a href="#" rel=”nofollow” target="_blank" class="socials__link">
+                <img src="img/icon-facebook.svg" alt="Facebook" width="43" height="43" class="socials__icon">
                 <span class="visually-hidden">Facebook</span>
               </a>
             </li>
             <li class="socials__item">
               <a href="https://wa.me/77078863633" target="_blank" class="socials__link">
-                <img src="img/icon-whatsup.svg" alt="Whatsup" class="socials__link">
+                <img src="img/icon-whatsup.svg" alt="Whatsup" width="43" height="43" class="socials__link">
                 <span class="visually-hidden">Whatsup</span>
               </a>
             </li>
@@ -462,8 +587,8 @@
 
   <section class="modal modal-subs hidden">
     <div class="modal__wrapper modal__wrapper--subs">
-      <div class="modal__content">
-        <h2 class="modal__title">Лучшие предложения и актуальные новости из мира туризма!</h2>
+      <div class="modal__content modal__content--subs">
+        <h2 class="modal__title modal__title--subs">Лучшие предложения и актуальные новости из мира туризма!</h2>
         <button class="modal__close modal__close--subs">
           <span class="visually-hidden">Закрыть</span>
 
@@ -481,8 +606,8 @@
 
   <section class="modal modal-feedback hidden">
     <div class="modal__wrapper">
-      <div class="modal__content">
-        <h2 class="modal__title">Успей приобрести супер-пупер выгодное предложение!</h2>
+      <div class="modal__content modal__content--booking">
+        <h2 class="modal__title modal__title--booking">Успей приобрести супер-пупер выгодное предложение!</h2>
         <button class="modal__close modal__close--feedback">
           <span class="visually-hidden">Закрыть</span>
         </button>
@@ -510,7 +635,10 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/imask"></script>
 
-  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/mobile-menu.js"></script>
+  <script src="js/booking-menu.js"></script>
 </body>
 
 </html>

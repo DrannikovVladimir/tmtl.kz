@@ -3,6 +3,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const bookingMailer = require("./booking.js");
 const subMailer = require("./sub.js");
+const robots = require('express-robots-txt');
 
 const PORT = process.env.PORT ?? 3000;
 const app = express();
@@ -10,6 +11,11 @@ const app = express();
 app.use(express.static(path.resolve(__dirname, 'static')));
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(robots({
+  UserAgent: '*',
+  Sitemap: 'https://tmtl.kz/css/sitemap.xml',
+  Host: 'https://tmtl.kz'
+}))
 
 app.post('/api/booking', (req, res) => {
   bookingMailer(req.body)
