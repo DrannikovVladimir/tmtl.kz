@@ -3,6 +3,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const bookingMailer = require("./booking.js");
 const subMailer = require("./sub.js");
+const phoneMailer = require("./phone.js");
 const robots = require('express-robots-txt');
 
 const PORT = process.env.PORT ?? 3000;
@@ -25,6 +26,12 @@ app.post('/api/booking', (req, res) => {
 
 app.post('/api/sub', (req, res) => {
   subMailer(req.body)
+    .then(() => res.status(200).json({ message: 'Спасибо что подписались на нашу рассылку.' }))
+    .catch(() => res.status(400).json({ message: 'Ошибка отправки. Мы уже устраняем эту проблему.'}));  
+});
+
+app.post('/api/phone', (req, res) => {
+  phoneMailer(req.body)
     .then(() => res.status(200).json({ message: 'Спасибо что подписались на нашу рассылку.' }))
     .catch(() => res.status(400).json({ message: 'Ошибка отправки. Мы уже устраняем эту проблему.'}));  
 });
