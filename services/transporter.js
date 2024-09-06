@@ -1,11 +1,9 @@
 const nodemailer = require('nodemailer');
 const dotEnv = require('dotenv');
-
-// Подгружаем переменные окружения
-dotEnv.config({ path: '.env' });
+const { API_EMAIL, API_PASS, API_HOST  } = require('../config');
 
 const createTransporter = () => {
-  if (!process.env.API_EMAIL || !process.env.API_PASS || !process.env.API_HOST) {
+  if (!API_EMAIL || !API_PASS || !API_HOST) {
     throw new Error('Отсутствуют необходимые переменные окружения');
   }
 
