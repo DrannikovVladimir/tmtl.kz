@@ -19,7 +19,7 @@ const subMailer = async ({ email }) => {
     console.log('Заявка на рассылку успешно отправлена:', email);
 
     // Отправляем бонусный файл пользователю
-    const filePath = path.resolve(__dirname, 'bonus.txt');
+    const filePath = path.resolve(__dirname, 'Putevoditel.pdf');
     await sendFileMailer({ email, filePath });
   } catch (error) {
     console.error('Ошибка при отправке заявки или файла:', error.message);

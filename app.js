@@ -22,7 +22,7 @@ function createApp() {
   // Настройка robots.txt
   app.use(robots({
     UserAgent: '*',
-    Sitemap: 'https://tmtl.kz/css/sitemap.xml',
+    Sitemap: 'https://tmtl.kz/sitemap.xml',
     Host: 'https://tmtl.kz',
     CrawlDelay: '5',
     CleanParam: 'utm_source&utm_medium&utm_campaign&sessionid',
