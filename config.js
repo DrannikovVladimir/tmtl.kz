@@ -5,5 +5,8 @@ module.exports = {
   API_PASS: process.env.API_PASS,
   API_EMAIL: process.env.API_EMAIL,
   PORT: process.env.PORT || 3000,
-  OPENWEATHERMAP_API_KEY: process.env.OPENWEATHERMAP_API_KEY
+  OPENWEATHERMAP_API_KEY: process.env.OPENWEATHERMAP_API_KEY,
+  SUBSCRIBE_EMAIL: process.env.SUBSCRIBE_EMAIL,
+  SUBSCRIBE_PASS: process.env.SUBSCRIBE_PASS,
+  SUBSCRIBE_HOST: process.env.SUBSCRIBE_HOST
 };
