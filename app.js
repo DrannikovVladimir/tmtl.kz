@@ -15,6 +15,13 @@ function createApp() {
 
   // Настройка middleware
   app.use(express.static(path.resolve(__dirname, 'static')));
+  app.use('/libs', express.static(path.resolve(__dirname, 'libs'), {
+    setHeaders: (res, filePath) => {
+      if (filePath.endsWith('.js')) {
+        res.set('Content-Type', 'application/javascript');
+      }
+    }
+  }));
   app.use(express.json());
   app.use(bodyParser.urlencoded({ extended: false }));
   app.use(cors());
