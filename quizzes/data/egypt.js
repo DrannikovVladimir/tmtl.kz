@@ -159,7 +159,7 @@ module.exports = {
           },
           {
             type: 'link',
-            content: "Узнать больше о Египте",
+            content: "Лучшие туры в Египет",
             href: "/countries/egypt/",
             className: "article__link article__link--quiz",
             target: "_blanc"
@@ -181,7 +181,7 @@ module.exports = {
           },
           {
             type: 'link',
-            content: "Интересные маршруты по Египту",
+            content: "Лучшие туры в Египет",
             href: "/tours/egypt/",
             className: "article__link article__link--quiz",
             target: "_blanc"
@@ -203,8 +203,8 @@ module.exports = {
           },
           {
             type: 'link',
-            content: "Необычные места Египта",
-            href: "/blog/egypt-secrets/",
+            content: "Лучшие туры в Египет",
+            href: "/tours/egypt/",
             className: "article__link article__link--quiz",
             target: "_blanc"
           }
@@ -225,7 +225,7 @@ module.exports = {
           },
           {
             type: 'link',
-            content: "Исследовать новые маршруты по Египту",
+            content: "Лучшие туры в Египет",
             href: "/tours/egypt/",
             className: "article__link article__link--quiz",
             target: "_blanc"
