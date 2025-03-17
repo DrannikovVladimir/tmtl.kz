@@ -173,7 +173,7 @@ module.exports = {
               content: "Пройти квиз на знание страны фараонов",
               href: "/country/egypt#quiz",
               className: "article__link article__link--quiz",
-              target: "_blanc"
+              target: "_self"
             }
           ]
         },
@@ -206,7 +206,7 @@ module.exports = {
               content: "Пройти квиз на знание страны фараонов",
               href: "/country/egypt#quiz",
               className: "article__link article__link--quiz",
-              target: "_blanc"
+              target: "_self"
             }
           ]
         },
@@ -232,7 +232,7 @@ module.exports = {
               content: "Искать туры в Дубай",
               href: "/tours/uae-dubai/",
               className: "article__link article__link--quiz",
-              target: "_blanc"
+              target: "_self"
             },
             {
               type: 'link',
@@ -268,7 +268,7 @@ module.exports = {
               content: "Пройти квиз на знание страны фараонов",
               href: "/country/egypt#quiz",
               className: "article__link article__link--quiz",
-              target: "_blanc"
+              target: "_self"
             }
           ]
         }

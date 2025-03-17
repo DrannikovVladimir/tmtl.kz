@@ -173,7 +173,7 @@ module.exports = {
           content: "Квиз: Что тебе известно о Городе Будущего?",
           href: "/country/uae/dubai#quiz",
           className: "article__link article__link--quiz",
-          target: "_blanc"
+          target: "_self"
         }
       ]
     },
@@ -206,7 +206,7 @@ module.exports = {
           content: "Квиз: Что тебе известно о Городе Будущего?",
           href: "/country/uae/dubai#quiz",
           className: "article__link article__link--quiz",
-          target: "_blanc"
+          target: "_self"
         }
       ]
     },
@@ -239,7 +239,7 @@ module.exports = {
           content: "Квиз: Что тебе известно о Городе Будущего?",
           href: "/country/uae/dubai#quiz",
           className: "article__link article__link--quiz",
-          target: "_blanc"
+          target: "_self"
         }
       ]
     },
@@ -268,7 +268,7 @@ module.exports = {
           content: "Квиз: Что тебе известно о Городе Будущего?",
           href: "/country/uae/dubai#quiz",
           className: "article__link article__link--quiz",
-          target: "_blanc"
+          target: "_self"
         }
       ]
     }

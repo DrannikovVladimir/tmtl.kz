@@ -169,7 +169,7 @@ module.exports = {
             content: "Квиз: Что тебе известно о Стране Восходящего Дракона?",
             href: "/country/vietnam#quiz",
             className: "article__link article__link--quiz",
-            target: "_blanc"
+            target: "_self"
           }
         ]
       },
@@ -198,7 +198,7 @@ module.exports = {
             content: "Квиз: Что тебе известно о Стране Восходящего Дракона?",
             href: "/country/vietnam#quiz",
             className: "article__link article__link--quiz",
-            target: "_blanc"
+            target: "_self"
           }
         ]
       },
@@ -227,7 +227,7 @@ module.exports = {
             content: "Квиз: Что тебе известно о Стране Восходящего Дракона?",
             href: "/country/vietnam#quiz",
             className: "article__link article__link--quiz",
-            target: "_blanc"
+            target: "_self"
           }
         ]
       },
@@ -256,7 +256,7 @@ module.exports = {
             content: "Квиз: Что тебе известно о Стране Восходящего Дракона?",
             href: "/country/vietnam#quiz",
             className: "article__link article__link--quiz",
-            target: "_blanc"
+            target: "_self"
           }
         ]
       }
