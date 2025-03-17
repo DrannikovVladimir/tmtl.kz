@@ -159,8 +159,15 @@ module.exports = {
           },
           {
             type: 'link',
-            content: "Лучшие туры в Египет",
-            href: "/countries/egypt/",
+            content: "Узнать больше о Египте",
+            href: "/country/egypt/",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз: Что тебе известно о Стране Восходящего Дракона?",
+            href: "/country/vietnam#quiz",
             className: "article__link article__link--quiz",
             target: "_blanc"
           }
@@ -185,6 +192,13 @@ module.exports = {
             href: "/tours/egypt/",
             className: "article__link article__link--quiz",
             target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз: Что тебе известно о Стране Восходящего Дракона?",
+            href: "/country/vietnam#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
           }
         ]
       },
@@ -207,6 +221,13 @@ module.exports = {
             href: "/tours/egypt/",
             className: "article__link article__link--quiz",
             target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз: Что тебе известно о Стране Восходящего Дракона?",
+            href: "/country/vietnam#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
           }
         ]
       },
@@ -227,6 +248,13 @@ module.exports = {
             type: 'link',
             content: "Лучшие туры в Египет",
             href: "/tours/egypt/",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз: Что тебе известно о Стране Восходящего Дракона?",
+            href: "/country/vietnam#quiz",
             className: "article__link article__link--quiz",
             target: "_blanc"
           }

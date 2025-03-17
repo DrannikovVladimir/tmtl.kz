@@ -163,8 +163,15 @@ module.exports = {
           },
           {
             type: 'link',
-            content: "Искать туры во Вьетнам",
-            href: "/tours/vietnam/",
+            content: "Узнать больше о Стране Восходящего Дракона",
+            href: "/country/vietnam/",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз: Что тебе известно об острове развлечений - Пхукете?",
+            href: "/country/thailand/phuket#quiz",
             className: "article__link article__link--quiz",
             target: "_blanc"
           }
@@ -193,6 +200,13 @@ module.exports = {
             href: "/tours/vietnam/",
             className: "article__link article__link--quiz",
             target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз: Что тебе известно об острове развлечений - Пхукете?",
+            href: "/country/thailand/phuket#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
           }
         ]
       },
@@ -219,6 +233,13 @@ module.exports = {
             href: "/tours/vietnam/",
             className: "article__link article__link--quiz",
             target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз: Что тебе известно об острове развлечений - Пхукете?",
+            href: "/country/thailand/phuket#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
           }
         ]
       },
@@ -239,6 +260,13 @@ module.exports = {
             type: 'link',
             content: "Лучшие отели во Вьетнаме",
             href: "/tours/vietnam/?tvsearch=nbd119",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз: Что тебе известно об острове развлечений - Пхукете?",
+            href: "/country/thailand/phuket#quiz",
             className: "article__link article__link--quiz",
             target: "_blanc"
           }
