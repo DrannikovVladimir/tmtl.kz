@@ -167,13 +167,6 @@ module.exports = {
           href: "/tours/thailand-phuket/",
           className: "article__link article__link--quiz",
           target: "_blanc"
-        },
-        {
-          type: 'link',
-          content: "Квиз: Что тебе известно о Городе Будущего?",
-          href: "/country/uae/dubai#quiz",
-          className: "article__link article__link--quiz",
-          target: "_self"
         }
       ]
     },
@@ -200,13 +193,6 @@ module.exports = {
           href: "/tours/thailand-phuket/",
           className: "article__link article__link--quiz",
           target: "_blanc"
-        },
-        {
-          type: 'link',
-          content: "Квиз: Что тебе известно о Городе Будущего?",
-          href: "/country/uae/dubai#quiz",
-          className: "article__link article__link--quiz",
-          target: "_self"
         }
       ]
     },
@@ -233,13 +219,6 @@ module.exports = {
           href: "/tours/thailand-phuket/",
           className: "article__link article__link--quiz",
           target: "_blanc"
-        },
-        {
-          type: 'link',
-          content: "Квиз: Что тебе известно о Городе Будущего?",
-          href: "/country/uae/dubai#quiz",
-          className: "article__link article__link--quiz",
-          target: "_self"
         }
       ]
     },
@@ -262,13 +241,6 @@ module.exports = {
           href: "/tours/thailand/?tvsearch=q5fn2r",
           className: "article__link article__link--quiz",
           target: "_blanc"
-        },
-        {
-          type: 'link',
-          content: "Квиз: Что тебе известно о Городе Будущего?",
-          href: "/country/uae/dubai#quiz",
-          className: "article__link article__link--quiz",
-          target: "_self"
         }
       ]
     }

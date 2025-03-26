@@ -163,17 +163,10 @@ module.exports = {
             },
             {
               type: 'link',
-              content: "Узнать больше о Дубае",
-              href: "/country/uae/dubai/",
+              content: "Искать туры в Дубай",
+              href: "/tours/uae-dubai/",
               className: "article__link article__link--quiz",
               target: "_blanc"
-            },
-            {
-              type: 'link',
-              content: "Пройти квиз на знание страны фараонов",
-              href: "/country/egypt#quiz",
-              className: "article__link article__link--quiz",
-              target: "_self"
             }
           ]
         },
@@ -200,13 +193,6 @@ module.exports = {
               href: "/tours/uae-dubai/",
               className: "article__link article__link--quiz",
               target: "_blanc"
-            },
-            {
-              type: 'link',
-              content: "Пройти квиз на знание страны фараонов",
-              href: "/country/egypt#quiz",
-              className: "article__link article__link--quiz",
-              target: "_self"
             }
           ]
         },
@@ -232,13 +218,6 @@ module.exports = {
               content: "Искать туры в Дубай",
               href: "/tours/uae-dubai/",
               className: "article__link article__link--quiz",
-              target: "_self"
-            },
-            {
-              type: 'link',
-              content: "Пройти квиз на знание страны фараонов",
-              href: "/country/egypt#quiz",
-              className: "article__link article__link--quiz",
               target: "_blanc"
             }
           ]
@@ -262,13 +241,6 @@ module.exports = {
               href: "/tours/uae/?tvsearch=nadus2",
               className: "article__link article__link--quiz",
               target: "_blanc"
-            },
-            {
-              type: 'link',
-              content: "Пройти квиз на знание страны фараонов",
-              href: "/country/egypt#quiz",
-              className: "article__link article__link--quiz",
-              target: "_self"
             }
           ]
         }
