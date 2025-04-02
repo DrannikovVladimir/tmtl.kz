@@ -167,6 +167,31 @@ module.exports = {
             href: "/tours/vietnam/",
             className: "article__link article__link--quiz",
             target: "_blanc"
+          },
+          {
+            type: 'text',
+            content: "Попробуйте свои силы в наших квизах"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Страны Фараонов",
+            href: "/country/egypt#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Бали",
+            href: "/country/indonesia/bali#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Дубая",
+            href: "/country/vietnam#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
           }
         ]
       },
@@ -191,6 +216,31 @@ module.exports = {
             type: 'link',
             content: "Искать туры во Вьетнам",
             href: "/tours/vietnam/",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'text',
+            content: "Попробуйте свои силы в наших квизах"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Страны Фараонов",
+            href: "/country/egypt#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Бали",
+            href: "/country/indonesia/bali#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Дубая",
+            href: "/country/vietnam#quiz",
             className: "article__link article__link--quiz",
             target: "_blanc"
           }
@@ -219,6 +269,31 @@ module.exports = {
             href: "/tours/vietnam/",
             className: "article__link article__link--quiz",
             target: "_blanc"
+          },
+          {
+            type: 'text',
+            content: "Попробуйте свои силы в наших квизах"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Страны Фараонов",
+            href: "/country/egypt#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Бали",
+            href: "/country/indonesia/bali#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Дубая",
+            href: "/country/vietnam#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
           }
         ]
       },
@@ -239,6 +314,31 @@ module.exports = {
             type: 'link',
             content: "Лучшие отели во Вьетнаме",
             href: "/tours/vietnam/?tvsearch=nbd119",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'text',
+            content: "Попробуйте свои силы в наших квизах"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Страны Фараонов",
+            href: "/country/egypt#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Бали",
+            href: "/country/indonesia/bali#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Дубая",
+            href: "/country/vietnam#quiz",
             className: "article__link article__link--quiz",
             target: "_blanc"
           }

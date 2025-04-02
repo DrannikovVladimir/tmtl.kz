@@ -163,6 +163,31 @@ module.exports = {
             href: "/countries/egypt/",
             className: "article__link article__link--quiz",
             target: "_blanc"
+          },
+          {
+            type: 'text',
+            content: "Попробуйте свои силы в наших квизах"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Пхукета",
+            href: "/country/thailand/phuket#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Бали",
+            href: "/country/indonesia/bali#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Турции",
+            href: "/country/turkey#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
           }
         ]
       },
@@ -183,6 +208,31 @@ module.exports = {
             type: 'link',
             content: "Лучшие туры в Египет",
             href: "/tours/egypt/",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'text',
+            content: "Попробуйте свои силы в наших квизах"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Пхукета",
+            href: "/country/thailand/phuket#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Бали",
+            href: "/country/indonesia/bali#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Турции",
+            href: "/country/turkey#quiz",
             className: "article__link article__link--quiz",
             target: "_blanc"
           }
@@ -207,6 +257,31 @@ module.exports = {
             href: "/tours/egypt/",
             className: "article__link article__link--quiz",
             target: "_blanc"
+          },
+          {
+            type: 'text',
+            content: "Попробуйте свои силы в наших квизах"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Пхукета",
+            href: "/country/thailand/phuket#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Бали",
+            href: "/country/indonesia/bali#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Турции",
+            href: "/country/turkey#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
           }
         ]
       },
@@ -227,6 +302,31 @@ module.exports = {
             type: 'link',
             content: "Лучшие туры в Египет",
             href: "/tours/egypt/",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'text',
+            content: "Попробуйте свои силы в наших квизах"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Пхукета",
+            href: "/country/thailand/phuket#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Бали",
+            href: "/country/indonesia/bali#quiz",
+            className: "article__link article__link--quiz",
+            target: "_blanc"
+          },
+          {
+            type: 'link',
+            content: "Квиз на знание Турции",
+            href: "/country/turkey#quiz",
             className: "article__link article__link--quiz",
             target: "_blanc"
           }

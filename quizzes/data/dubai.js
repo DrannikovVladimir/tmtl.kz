@@ -167,6 +167,31 @@ module.exports = {
               href: "/tours/uae-dubai/",
               className: "article__link article__link--quiz",
               target: "_blanc"
+            },
+            {
+              type: 'text',
+              content: "Попробуйте свои силы в наших квизах"
+            },
+            {
+              type: 'link',
+              content: "Квиз на знание Пхукета",
+              href: "/country/thailand/phuket#quiz",
+              className: "article__link article__link--quiz",
+              target: "_blanc"
+            },
+            {
+              type: 'link',
+              content: "Квиз на знание Бали",
+              href: "/country/indonesia/bali#quiz",
+              className: "article__link article__link--quiz",
+              target: "_blanc"
+            },
+            {
+              type: 'link',
+              content: "Квиз на знание Вьетнама",
+              href: "/country/vietnam#quiz",
+              className: "article__link article__link--quiz",
+              target: "_blanc"
             }
           ]
         },
@@ -191,6 +216,31 @@ module.exports = {
               type: 'link',
               content: "Искать туры в Дубай",
               href: "/tours/uae-dubai/",
+              className: "article__link article__link--quiz",
+              target: "_blanc"
+            },
+            {
+              type: 'text',
+              content: "Попробуйте свои силы в наших квизах"
+            },
+            {
+              type: 'link',
+              content: "Квиз на знание Пхукета",
+              href: "/country/thailand/phuket#quiz",
+              className: "article__link article__link--quiz",
+              target: "_blanc"
+            },
+            {
+              type: 'link',
+              content: "Квиз на знание Бали",
+              href: "/country/indonesia/bali#quiz",
+              className: "article__link article__link--quiz",
+              target: "_blanc"
+            },
+            {
+              type: 'link',
+              content: "Квиз на знание Вьетнама",
+              href: "/country/vietnam#quiz",
               className: "article__link article__link--quiz",
               target: "_blanc"
             }
@@ -219,6 +269,31 @@ module.exports = {
               href: "/tours/uae-dubai/",
               className: "article__link article__link--quiz",
               target: "_blanc"
+            },
+            {
+              type: 'text',
+              content: "Попробуйте свои силы в наших квизах"
+            },
+            {
+              type: 'link',
+              content: "Квиз на знание Пхукета",
+              href: "/country/thailand/phuket#quiz",
+              className: "article__link article__link--quiz",
+              target: "_blanc"
+            },
+            {
+              type: 'link',
+              content: "Квиз на знание Бали",
+              href: "/country/indonesia/bali#quiz",
+              className: "article__link article__link--quiz",
+              target: "_blanc"
+            },
+            {
+              type: 'link',
+              content: "Квиз на знание Вьетнама",
+              href: "/country/vietnam#quiz",
+              className: "article__link article__link--quiz",
+              target: "_blanc"
             }
           ]
         },
@@ -239,6 +314,31 @@ module.exports = {
               type: 'link',
               content: "Лучшие отели в Дубае",
               href: "/tours/uae/?tvsearch=nadus2",
+              className: "article__link article__link--quiz",
+              target: "_blanc"
+            },
+            {
+              type: 'text',
+              content: "Попробуйте свои силы в наших квизах"
+            },
+            {
+              type: 'link',
+              content: "Квиз на знание Пхукета",
+              href: "/country/thailand/phuket#quiz",
+              className: "article__link article__link--quiz",
+              target: "_blanc"
+            },
+            {
+              type: 'link',
+              content: "Квиз на знание Бали",
+              href: "/country/indonesia/bali#quiz",
+              className: "article__link article__link--quiz",
+              target: "_blanc"
+            },
+            {
+              type: 'link',
+              content: "Квиз на знание Вьетнама",
+              href: "/country/vietnam#quiz",
               className: "article__link article__link--quiz",
               target: "_blanc"
             }
