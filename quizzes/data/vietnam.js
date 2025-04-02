@@ -167,11 +167,9 @@ module.exports = {
             href: "/tours/vietnam/",
             className: "article__link article__link--quiz",
             target: "_blanc"
-          },
-          {
-            type: 'text',
-            content: "Попробуйте свои силы в наших квизах"
-          },
+          }
+        ],
+        otherQuizzes: [
           {
             type: 'link',
             content: "Квиз на знание Страны Фараонов",
@@ -189,7 +187,7 @@ module.exports = {
           {
             type: 'link',
             content: "Квиз на знание Дубая",
-            href: "/country/vietnam#quiz",
+            href: "/country/uae/dubai#quiz",
             className: "article__link article__link--quiz",
             target: "_blanc"
           }
@@ -218,11 +216,9 @@ module.exports = {
             href: "/tours/vietnam/",
             className: "article__link article__link--quiz",
             target: "_blanc"
-          },
-          {
-            type: 'text',
-            content: "Попробуйте свои силы в наших квизах"
-          },
+          }
+        ],
+        otherQuizzes: [
           {
             type: 'link',
             content: "Квиз на знание Страны Фараонов",
@@ -240,7 +236,7 @@ module.exports = {
           {
             type: 'link',
             content: "Квиз на знание Дубая",
-            href: "/country/vietnam#quiz",
+            href: "/country/uae/dubai#quiz",
             className: "article__link article__link--quiz",
             target: "_blanc"
           }
@@ -269,11 +265,9 @@ module.exports = {
             href: "/tours/vietnam/",
             className: "article__link article__link--quiz",
             target: "_blanc"
-          },
-          {
-            type: 'text',
-            content: "Попробуйте свои силы в наших квизах"
-          },
+          }
+        ],
+        otherQuizzes: [
           {
             type: 'link',
             content: "Квиз на знание Страны Фараонов",
@@ -291,7 +285,7 @@ module.exports = {
           {
             type: 'link',
             content: "Квиз на знание Дубая",
-            href: "/country/vietnam#quiz",
+            href: "/country/uae/dubai#quiz",
             className: "article__link article__link--quiz",
             target: "_blanc"
           }
@@ -316,11 +310,9 @@ module.exports = {
             href: "/tours/vietnam/?tvsearch=nbd119",
             className: "article__link article__link--quiz",
             target: "_blanc"
-          },
-          {
-            type: 'text',
-            content: "Попробуйте свои силы в наших квизах"
-          },
+          }
+        ],
+        otherQuizzes: [
           {
             type: 'link',
             content: "Квиз на знание Страны Фараонов",
@@ -338,7 +330,7 @@ module.exports = {
           {
             type: 'link',
             content: "Квиз на знание Дубая",
-            href: "/country/vietnam#quiz",
+            href: "/country/uae/dubai#quiz",
             className: "article__link article__link--quiz",
             target: "_blanc"
           }

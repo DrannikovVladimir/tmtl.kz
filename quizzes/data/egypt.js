@@ -159,15 +159,13 @@ module.exports = {
           },
           {
             type: 'link',
-            content: "Лучшие туры в Египет",
+            content: "Искать лучшие туры в Египет",
             href: "/countries/egypt/",
             className: "article__link article__link--quiz",
             target: "_blanc"
-          },
-          {
-            type: 'text',
-            content: "Попробуйте свои силы в наших квизах"
-          },
+          }
+        ],
+        otherQuizzes: [
           {
             type: 'link',
             content: "Квиз на знание Пхукета",
@@ -206,15 +204,13 @@ module.exports = {
           },
           {
             type: 'link',
-            content: "Лучшие туры в Египет",
+            content: "Искать лучшие туры в Египет",
             href: "/tours/egypt/",
             className: "article__link article__link--quiz",
             target: "_blanc"
-          },
-          {
-            type: 'text',
-            content: "Попробуйте свои силы в наших квизах"
-          },
+          }
+        ],
+        otherQuizzes: [
           {
             type: 'link',
             content: "Квиз на знание Пхукета",
@@ -253,15 +249,13 @@ module.exports = {
           },
           {
             type: 'link',
-            content: "Лучшие туры в Египет",
+            content: "Искать лучшие туры в Египет",
             href: "/tours/egypt/",
             className: "article__link article__link--quiz",
             target: "_blanc"
-          },
-          {
-            type: 'text',
-            content: "Попробуйте свои силы в наших квизах"
-          },
+          }
+        ],
+        otherQuizzes: [
           {
             type: 'link',
             content: "Квиз на знание Пхукета",
@@ -300,15 +294,13 @@ module.exports = {
           },
           {
             type: 'link',
-            content: "Лучшие туры в Египет",
+            content: "Искать лучшие туры в Египет",
             href: "/tours/egypt/",
             className: "article__link article__link--quiz",
             target: "_blanc"
-          },
-          {
-            type: 'text',
-            content: "Попробуйте свои силы в наших квизах"
-          },
+          }
+        ],
+        otherQuizzes: [
           {
             type: 'link',
             content: "Квиз на знание Пхукета",

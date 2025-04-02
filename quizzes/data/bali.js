@@ -159,15 +159,13 @@ module.exports = {
         },
         {
           type: 'link',
-          content: "Лучшие туры на Бали",
+          content: "Искать лучшие туры на Бали",
           href: "/tours/indonesia-bali/",
           className: "article__link article__link--quiz",
           target: "_blanc"
-        },
-        {
-          type: 'text',
-          content: "Попробуйте свои силы в наших квизах"
-        },
+        }
+      ],
+      otherQuizzes: [
         {
           type: 'link',
           content: "Квиз на знание Пхукета",
@@ -206,15 +204,13 @@ module.exports = {
         },
         {
           type: 'link',
-          content: "Лучшие туры на Бали",
+          content: "Искать лучшие туры на Бали",
           href: "/tours/indonesia-bali/",
           className: "article__link article__link--quiz",
           target: "_blanc"
-        },
-        {
-          type: 'text',
-          content: "Попробуйте свои силы в наших квизах"
-        },
+        }
+      ],
+      otherQuizzes: [
         {
           type: 'link',
           content: "Квиз на знание Пхукета",
@@ -253,15 +249,13 @@ module.exports = {
         },
         {
           type: 'link',
-          content: "Лучшие туры на Бали",
+          content: "Искать лучшие туры на Бали",
           href: "/tours/indonesia-bali/",
           className: "article__link article__link--quiz",
           target: "_blanc"
-        },
-        {
-          type: 'text',
-          content: "Попробуйте свои силы в наших квизах"
-        },
+        }
+      ],
+      otherQuizzes: [
         {
           type: 'link',
           content: "Квиз на знание Пхукета",
@@ -304,11 +298,9 @@ module.exports = {
           href: "/tours/indonesia-bali/",
           className: "article__link article__link--quiz",
           target: "_blanc"
-        },
-        {
-          type: 'text',
-          content: "Попробуйте свои силы в наших квизах"
-        },
+        }        
+      ],
+      otherQuizzes: [
         {
           type: 'link',
           content: "Квиз на знание Пхукета",

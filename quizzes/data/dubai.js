@@ -167,11 +167,9 @@ module.exports = {
               href: "/tours/uae-dubai/",
               className: "article__link article__link--quiz",
               target: "_blanc"
-            },
-            {
-              type: 'text',
-              content: "Попробуйте свои силы в наших квизах"
-            },
+            }
+          ],
+          otherQuizzes: [
             {
               type: 'link',
               content: "Квиз на знание Пхукета",
@@ -188,8 +186,8 @@ module.exports = {
             },
             {
               type: 'link',
-              content: "Квиз на знание Вьетнама",
-              href: "/country/vietnam#quiz",
+              content: "Квиз на знание Турции",
+              href: "/country/turkey#quiz",
               className: "article__link article__link--quiz",
               target: "_blanc"
             }
@@ -218,11 +216,9 @@ module.exports = {
               href: "/tours/uae-dubai/",
               className: "article__link article__link--quiz",
               target: "_blanc"
-            },
-            {
-              type: 'text',
-              content: "Попробуйте свои силы в наших квизах"
-            },
+            }
+          ],
+          otherQuizzes: [
             {
               type: 'link',
               content: "Квиз на знание Пхукета",
@@ -239,8 +235,8 @@ module.exports = {
             },
             {
               type: 'link',
-              content: "Квиз на знание Вьетнама",
-              href: "/country/vietnam#quiz",
+              content: "Квиз на знание Турции",
+              href: "/country/turkey#quiz",
               className: "article__link article__link--quiz",
               target: "_blanc"
             }
@@ -269,11 +265,9 @@ module.exports = {
               href: "/tours/uae-dubai/",
               className: "article__link article__link--quiz",
               target: "_blanc"
-            },
-            {
-              type: 'text',
-              content: "Попробуйте свои силы в наших квизах"
-            },
+            }
+          ],
+          otherQuizzes: [
             {
               type: 'link',
               content: "Квиз на знание Пхукета",
@@ -290,8 +284,8 @@ module.exports = {
             },
             {
               type: 'link',
-              content: "Квиз на знание Вьетнама",
-              href: "/country/vietnam#quiz",
+              content: "Квиз на знание Турции",
+              href: "/country/turkey#quiz",
               className: "article__link article__link--quiz",
               target: "_blanc"
             }
@@ -316,11 +310,9 @@ module.exports = {
               href: "/tours/uae/?tvsearch=nadus2",
               className: "article__link article__link--quiz",
               target: "_blanc"
-            },
-            {
-              type: 'text',
-              content: "Попробуйте свои силы в наших квизах"
-            },
+            }            
+          ],
+          otherQuizzes: [
             {
               type: 'link',
               content: "Квиз на знание Пхукета",
@@ -337,8 +329,8 @@ module.exports = {
             },
             {
               type: 'link',
-              content: "Квиз на знание Вьетнама",
-              href: "/country/vietnam#quiz",
+              content: "Квиз на знание Турции",
+              href: "/country/turkey#quiz",
               className: "article__link article__link--quiz",
               target: "_blanc"
             }
