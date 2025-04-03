@@ -231,22 +231,19 @@ module.exports = {
           type: 'link',
           content: "Туры во Вьетнам",
           href: "/tours/vietnam/",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Туры во Таиланд",
           href: "/tours/thailand/",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Туры на Хайнань",
           href: "/tours/china/hainan/",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         }
       ],
       otherQuizzes: [
@@ -254,22 +251,19 @@ module.exports = {
           type: 'link',
           content: "Квиз на знание Страны Фараонов",
           href: "/country/egypt#quiz",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Квиз на знание Бали",
           href: "/country/indonesia/bali#quiz",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Квиз на знание Вьетнама",
           href: "/country/vietnam#quiz",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         }
       ]
     },
@@ -290,22 +284,19 @@ module.exports = {
           type: 'link',
           content: "Туры во Вьетнам",
           href: "/tours/vietnam/",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Туры во Таиланд",
           href: "/tours/thailand/",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Туры на Хайнань",
           href: "/tours/china/hainan/",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         }
       ],
       otherQuizzes: [
@@ -313,22 +304,19 @@ module.exports = {
           type: 'link',
           content: "Квиз на знание Страны Фараонов",
           href: "/country/egypt#quiz",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Квиз на знание Бали",
           href: "/country/indonesia/bali#quiz",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Квиз на знание Вьетнама",
           href: "/country/vietnam#quiz",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         }
       ]
     },
@@ -349,22 +337,19 @@ module.exports = {
           type: 'link',
           content: "Туры во Вьетнам",
           href: "/tours/vietnam/",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Туры во Таиланд",
           href: "/tours/thailand/",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Туры на Хайнань",
           href: "/tours/china/hainan/",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         }
       ],
       otherQuizzes: [
@@ -372,22 +357,19 @@ module.exports = {
           type: 'link',
           content: "Квиз на знание Страны Фараонов",
           href: "/country/egypt#quiz",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Квиз на знание Бали",
           href: "/country/indonesia/bali#quiz",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Квиз на знание Вьетнама",
           href: "/country/vietnam#quiz",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         }
       ]
     },
@@ -408,22 +390,19 @@ module.exports = {
           type: 'link',
           content: "Туры на Фукуок",
           href: "/tours/vietnam-phuquoc",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Туры на Пхукет",
           href: "/tours/thailand-phuket/",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Туры на Хайнань",
           href: "/tours/china/hainan/",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         }
       ],
       otherQuizzes: [
@@ -431,22 +410,19 @@ module.exports = {
           type: 'link',
           content: "Квиз на знание Страны Фараонов",
           href: "/country/egypt#quiz",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Квиз на знание Бали",
           href: "/country/indonesia/bali#quiz",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         },
         {
           type: 'link',
           content: "Квиз на знание Вьетнама",
           href: "/country/vietnam#quiz",
-          className: "article__link article__link--quiz",
-          target: "_blanc"
+          className: "article__link article__link--quiz"
         }
       ]
     }
