@@ -5,6 +5,7 @@ const phoneRoutes = require('./phoneRoutes');
 const fileRoutes = require('./fileRoutes');
 const tourismRoutes = require('./tourismRoutes');
 const quizRoutes = require('./quizRoutes');
+const mapRoutes = require('./mapRoutes');
 
 const router = express.Router();
 
@@ -15,5 +16,6 @@ router.use('/phone', phoneRoutes);
 router.use('/sendFile', fileRoutes);
 router.use('/tourism', tourismRoutes);
 router.use('/quizzes', quizRoutes);
+router.use('/maps', mapRoutes);
 
 module.exports = router;
