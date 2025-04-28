@@ -30,7 +30,7 @@ function createApp() {
   app.use(robots({
     UserAgent: '*',
     Sitemap: 'https://tmtl.kz/sitemap.xml',
-    Host: 'https://tmtl.kz',
+    Host: 'tmtl.kz',
     CrawlDelay: '5',
     CleanParam: 'utm_source&utm_medium&utm_campaign&sessionid',
   }));
