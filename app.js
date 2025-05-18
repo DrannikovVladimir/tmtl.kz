@@ -5,6 +5,7 @@ const robots = require('express-robots-txt');
 const cors = require('cors');
 const routes = require('./routes');
 const { PORT } = require('./config');
+const { bot } = require('./bot');
 
 /**
  * Создает и настраивает экземпляр Express-приложения

@@ -6,6 +6,7 @@ const fileRoutes = require('./fileRoutes');
 const tourismRoutes = require('./tourismRoutes');
 const quizRoutes = require('./quizRoutes');
 const mapRoutes = require('./mapRoutes');
+const botRoutes = require('./botRoutes');
 
 const router = express.Router();
 
@@ -17,5 +18,6 @@ router.use('/sendFile', fileRoutes);
 router.use('/tourism', tourismRoutes);
 router.use('/quizzes', quizRoutes);
 router.use('/maps', mapRoutes);
+router.use('/bot', botRoutes);
 
 module.exports = router;
