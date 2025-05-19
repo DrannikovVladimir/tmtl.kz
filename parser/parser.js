@@ -116,6 +116,7 @@ function log(message, type = 'info') {
           location: getHotelLocation(tourElement),
           description: getHotelDescription(tourElement),
           hotelUrl: getHotelUrl(tourElement),
+          rating: getHotelRating(tourElement),
           currentPrice: getCurrentPrice(tourElement),
           oldPrice: getOldPrice(tourElement),
           discountPercentage: getDiscountPercentage(tourElement),
@@ -493,6 +494,33 @@ async function getHotelPhotos(tourElement) {
     return 'Н/Д';
   }
  }
+
+ // Функция для получения рейтинга отеля
+function getHotelRating(tourElement) {
+  try {
+    // Ищем элемент с рейтингом по селектору
+    const ratingElement = tourElement.querySelector('.TVHotelInfoRating');
+    
+    if (!ratingElement) {
+      // Если элемент не найден, возвращаем 0
+      return 0;
+    }
+    
+    // Получаем текст элемента и преобразуем в число
+    const ratingText = ratingElement.textContent.trim();
+    const rating = parseFloat(ratingText);
+    
+    if (!isNaN(rating)) {
+      // Умножаем рейтинг на 2, чтобы привести к шкале от 0 до 10
+      return rating * 2;
+    }
+    
+    return 0;
+  } catch (error) {
+    log(`Ошибка при получении рейтинга отеля: ${error.message}`, 'warn');
+    return 0;
+  }
+}
  
  // Функция для получения описания отеля
  function getHotelDescription(tourElement) {
