@@ -23,34 +23,79 @@ const readToursFromFile = (filePath) => {
 };
 
 /**
- * Публикует пост о туре в канал
- * @param {Object} bot - Экземпляр Telegram бота
- * @param {String} channelId - ID канала для публикации
- * @param {Object} tour - Объект с данными о туре
- * @returns {Promise<Boolean>} - Результат публикации
- */
+* Публикует пост о туре в канал
+* @param {Object} bot - Экземпляр Telegram бота
+* @param {String} channelId - ID канала для публикации
+* @param {Object} tour - Объект с данными о туре
+* @returns {Promise<Boolean>} - Результат публикации
+*/
 const publishTourPost = async (bot, channelId, tour) => {
   try {
     // Форматируем текст поста
     const postText = templates.formatTourPost(tour);
     
-    // Получаем URL первой фотографии тура
-    const photoUrl = tour.photos[0];
+    // Проверяем, есть ли у тура массив фотографий
+    if (!tour.photos || tour.photos.length === 0) {
+      console.error('У тура нет фотографий:', tour.name);
+      return false;
+    }
     
-    // Создаем клавиатуру с кнопкой
-    const keyboard = templates.createHotelKeyboard(tour.hotelUrl);
+    // Создаем массив доступных фотографий
+    // Используем Set для хранения уникальных URL фотографий
+    const uniquePhotos = [...new Set(tour.photos)];
     
-    // Публикуем пост с фото, текстом и кнопкой
-    await bot.sendPhoto(channelId, photoUrl, {
-      caption: postText,
-      parse_mode: 'Markdown',
-      reply_markup: JSON.stringify(keyboard)
+    // Если уникальных фотографий слишком мало, просто отправляем одну фотографию
+    if (uniquePhotos.length <= 1) {
+      await bot.sendPhoto(channelId, uniquePhotos[0], {
+        caption: postText,
+        parse_mode: 'HTML'
+      });
+      console.log(`Опубликован пост о туре с одной фотографией: ${tour.name}`);
+      return true;
+    }
+    
+    // Функция для перемешивания массива (алгоритм Фишера-Йейтса)
+    const shuffleArray = (array) => {
+      const result = [...array]; // Создаем копию массива
+      for (let i = result.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [result[i], result[j]] = [result[j], result[i]];
+      }
+      return result;
+    };
+    
+    // Перемешиваем уникальные фотографии
+    const shuffledPhotos = shuffleArray(uniquePhotos);
+    
+    // Выбираем до 5 уникальных фотографий (первая будет использоваться для текста)
+    const photosToSend = shuffledPhotos.slice(0, Math.min(5, shuffledPhotos.length));
+    
+    // Готовим массив медиа для отправки группой
+    const mediaGroup = photosToSend.map((photoUrl, index) => {
+      // Первое фото в группе содержит текст
+      if (index === 0) {
+        return {
+          type: 'photo',
+          media: photoUrl,
+          caption: postText,
+          parse_mode: 'HTML'
+        };
+      }
+      // Остальные фото без текста
+      return {
+        type: 'photo',
+        media: photoUrl
+      };
     });
     
-    console.log(`Опубликован пост о туре: ${tour.name}`);
+    // Отправляем группу фотографий
+    await bot.sendMediaGroup(channelId, mediaGroup);
+    
+    console.log(`Опубликован пост о туре с ${photosToSend.length} уникальными фотографиями: ${tour.name}`);
     return true;
   } catch (error) {
     console.error('Ошибка при публикации поста:', error);
+    console.error(error.stack);
     return false;
   }
 };

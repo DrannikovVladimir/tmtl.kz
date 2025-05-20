@@ -46,7 +46,40 @@ function log(message, type = 'info') {
     log(`Ошибка при имитации клика: ${error.message}`, 'error');
     return false;
   }
- }
+}
+
+// Расширенная информация о странах (курорты и ссылки на страницы туров)
+const countriesInfo = {
+  'Турция': {
+    resorts: ['кемер', 'алания', 'аланья', 'белек', 'сиде', 'мармарис', 'бодрум', 'бурса', 'анталья', 'анталия', 'болу', 'фетхие', 'стамбул', 'измир', 'кайсери', 'каппадокия', 'кушадасы', 'даламан', 'дидим', 'сарыкамыш', 'чешме', 'эрзурум', 'инджекум'],
+    tourPageUrl: 'https://tmtl.kz/tours/turkey/'
+  },
+  
+  'Египет': {
+    resorts: ['хургада', 'шарм-эль-шейх', 'шарм', 'дахаб', 'каир', 'матрух', 'нувейба', 'сафага', 'макади бей', 'сафага', 'марса алам', 'эль гуна', 'сома бей', 'таба'],
+    tourPageUrl: 'https://tmtl.kz/tours/egypt/'
+  },
+  
+  'ОАЭ': {
+    resorts: ['дубай', 'шарджа', 'абу-даби', 'рас-эль-хайма', 'рас-эль-хайм', 'ум аль кувейн', 'ум-аль-кувейн', 'аджман', 'абу даби', 'рас эль хайма', 'фуджейра'],
+    tourPageUrl: 'https://tmtl.kz/tours/uae/'
+  },
+  
+  'Хайнань': {
+    resorts: ['хайнань', 'санья', 'хайкоу', 'бэйдайхэ'],
+    tourPageUrl: 'https://tmtl.kz/tours/china/hainan/'
+  },
+  
+  'Вьетнам': {
+    resorts: ['нячанг', 'фукуок', 'фантьет', 'дананг', 'камрань',  'хошимин', 'ханой', 'вунгтау', 'вунг тау',  'хойан', 'хой ан', 'муйне'],
+    tourPageUrl: 'https://tmtl.kz/tours/vietnam/'
+  },
+  
+  'Таиланд': {
+    resorts: ['паттайя', 'пхукет', 'самуи', 'бангкок', 'краби', 'паттая', 'районг', 'пи пи', 'чианг май', 'ко чанг', 'хуа хин', 'као лак'],
+    tourPageUrl: 'https://tmtl.kz/tours/thailand/'
+  }
+}
  
  // Функция для ожидания появления элемента с таймаутом
  async function waitForElement(parent, selector, maxWaitTime = 1000) {
@@ -81,8 +114,8 @@ function log(message, type = 'info') {
   }
  }
  
- // Главная функция парсера с асинхронной обработкой
- async function parseTours() {
+ // Главная функция парсера с асинхронной обработкой (вернулись к структуре массива)
+async function parseTours() {
   log('Начинаем парсинг туров...');
   
   try {
@@ -98,6 +131,9 @@ function log(message, type = 'info') {
     // Массив для хранения собранных данных
     const tours = [];
     
+    // Переменная для определения имени файла
+    let fileNameCountry = "unknown_country";
+    
     // Обработка каждого элемента тура строго последовательно
     for (let index = 0; index < tourElements.length; index++) {
       const tourElement = tourElements[index];
@@ -109,11 +145,22 @@ function log(message, type = 'info') {
         await closeAllTabs(tourElement);
         await delay(500);
         
+        // Извлекаем местоположение для определения страны
+        const location = getHotelLocation(tourElement);
+        const { country, tourPageUrl } = getCountryByLocation(location);
+        
+        // Запоминаем страну для имени файла, если она определена
+        if (country !== "Неизвестная страна" && fileNameCountry === "unknown_country") {
+          fileNameCountry = country;
+        }
+        
         // Извлекаем базовую информацию о туре (доступна без клика)
         const tour = {
           name: getHotelName(tourElement),
           stars: getHotelStars(tourElement),
-          location: getHotelLocation(tourElement),
+          location: location,
+          country: country, // Страна для каждого отдельного тура
+          tourPageUrl: tourPageUrl, // Ссылка на страницу туров для каждого отдельного тура
           description: getHotelDescription(tourElement),
           hotelUrl: getHotelUrl(tourElement),
           rating: getHotelRating(tourElement),
@@ -128,6 +175,7 @@ function log(message, type = 'info') {
           guests: ''
         };
         
+        // Продолжаем с оригинальной логикой...
         log(`Базовая информация о туре #${index + 1} получена, получаем фотографии...`);
         
         // Шаг 1: Получаем фотографии отеля
@@ -161,25 +209,25 @@ function log(message, type = 'info') {
     
     log(`Всего обработано туров: ${tours.length}`);
     
-    // Формирование результатов в формате JSON
-    const jsonResult = JSON.stringify(tours, null, 2);
+    // Формируем результат просто как массив туров (как было раньше)
     
     // Вывод результатов в консоль
+    const jsonResult = JSON.stringify(tours, null, 2);
     log('Результаты парсинга:');
     console.log(jsonResult);
     
     // Копирование результатов в буфер обмена
     copyToClipboard(jsonResult);
     
-    // Сохранение в файл
-    saveToFile(tours, 'tours_' + new Date().toISOString().slice(0, 10) + '.json');
+    // Сохранение в файл, используя fileNameCountry для имени файла
+    saveToFile(tours, 'tours_' + fileNameCountry + '_' + new Date().toISOString().slice(0, 10) + '.json');
     
     return tours;
   } catch (error) {
     log(`Ошибка при парсинге: ${error.message}`, 'error');
-    return [];
+    return [];  // Возвращаем пустой массив в случае ошибки
   }
- }
+}
 
 // Функция для получения фотографий отеля - исправленная версия
 async function getHotelPhotos(tourElement) {
@@ -471,29 +519,46 @@ async function getHotelPhotos(tourElement) {
     log(`Ошибка при получении количества звезд отеля: ${error.message}`, 'warn');
     return 0;
   }
- }
- 
- // Функция для получения местоположения отеля
- function getHotelLocation(tourElement) {
-  try {
-    // Сначала проверяем селектор из скриншота
-    const locationElement = tourElement.querySelector('.TVResultItemSubTitle');
-    if (locationElement) {
-      return locationElement.textContent.trim();
-    }
-    
-    // Запасной вариант - ищем по старому селектору
-    const altLocationElement = tourElement.querySelector('.TVHotelInfoSubTitle');
-    if (altLocationElement) {
-      return altLocationElement.textContent.trim();
-    }
-    
-    return 'Н/Д';
-  } catch (error) {
-    log(`Ошибка при получении местоположения отеля: ${error.message}`, 'warn');
-    return 'Н/Д';
+}
+
+// Функция для определения страны по курорту
+function getCountryByResort(resortText) {
+  if (!resortText || typeof resortText !== 'string') {
+    return { country: "Неизвестная страна", tourPageUrl: "" };
   }
- }
+  
+  // Нормализуем текст курорта (приводим к нижнему регистру, удаляем лишние пробелы)
+  const normalizedResort = resortText.toLowerCase().trim();
+  
+  // Проверяем каждую страну и её курорты
+  for (const [country, info] of Object.entries(countriesInfo)) {
+    const resorts = info.resorts;
+    
+    // Сначала проверяем полное совпадение
+    if (resorts.includes(normalizedResort)) {
+      return { country, tourPageUrl: info.tourPageUrl };
+    }
+    
+    // Затем проверяем частичное совпадение
+    for (const resort of resorts) {
+      if (normalizedResort.includes(resort)) {
+        return { country, tourPageUrl: info.tourPageUrl };
+      }
+    }
+  }
+  
+  // Если не нашли совпадений
+  return { country: "Неизвестная страна", tourPageUrl: "" };
+}
+
+// Функция для определения страны по местоположению
+function getCountryByLocation(location) {
+  if (location === 'Н/Д') {
+    return { country: "Неизвестная страна", tourPageUrl: "" };
+  }
+  
+  return getCountryByResort(location);
+}
 
  // Функция для получения рейтинга отеля
 function getHotelRating(tourElement) {
@@ -519,6 +584,28 @@ function getHotelRating(tourElement) {
   } catch (error) {
     log(`Ошибка при получении рейтинга отеля: ${error.message}`, 'warn');
     return 0;
+  }
+}
+ 
+ // Функция для получения местоположения отеля
+ function getHotelLocation(tourElement) {
+  try {
+    // Сначала проверяем селектор из скриншота
+    const locationElement = tourElement.querySelector('.TVResultItemSubTitle');
+    if (locationElement) {
+      return locationElement.textContent.trim();
+    }
+    
+    // Запасной вариант - ищем по старому селектору
+    // const altLocationElement = tourElement.querySelector('.TVHotelInfoSubTitle');
+    // if (altLocationElement) {
+    //   return altLocationElement.textContent.trim();
+    // }
+    
+    return 'Н/Д';
+  } catch (error) {
+    log(`Ошибка при получении местоположения отеля: ${error.message}`, 'warn');
+    return 'Н/Д';
   }
 }
  
