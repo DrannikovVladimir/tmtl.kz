@@ -1,0 +1,157 @@
+[
+  {
+    "timestamp": "2025-06-03T08:03:34.226Z",
+    "sessionId": "session_1748937814226_bhkjd2fvl",
+    "level": "INFO",
+    "message": "🚀 Инициализация простого парсера (без прокси)...",
+    "data": null,
+    "datetime": "03.06.2025, 14:03:34"
+  },
+  {
+    "timestamp": "2025-06-03T08:03:34.247Z",
+    "sessionId": "session_1748937814226_bhkjd2fvl",
+    "level": "SUCCESS",
+    "message": "✅ Простой парсер инициализирован",
+    "data": null,
+    "datetime": "03.06.2025, 14:03:34"
+  },
+  {
+    "timestamp": "2025-06-03T08:03:34.248Z",
+    "sessionId": "session_1748937814226_bhkjd2fvl",
+    "level": "INFO",
+    "message": "🚀 Начало парсинга канала",
+    "data": {
+      "channelUrl": "@test_hot_tours",
+      "options": {
+        "apiId": 25674662,
+        "apiHash": "14c3c3bf6cac3317faf389e4329fab4e",
+        "phoneNumber": "+77028883633",
+        "sessionString": "1AgAOMTQ5LjE1NC4xNjcuNDEBuy6ELeBQeiBqoXuWBys9Ao0Icwrt73oId5Beww3nOgN3bbYtCuMEr4YRulOgorhY6o9BN5TogAIdSE7fTmNhOzUWLf+eGSF7SURBo/we6xSlrAolI09XmjbUqIpJa6x4ldI/yLa7j9fKpfcaZ5oyntms1ILtKOTxBDJi+eKlsMn5COGLrcaCanW3YadcRcOTfGgCM1YGh2o2a7ZEy72BTylWMy0BD7U99JeujK8R7z0NiGtcuuHJuKGafm+LAa7Ljlc2S8qDvtpMKGPYePpmwjCCgGNj+9Rr4KbC6nVxvRo1oaHoAIWUQ+HM2+cBigObMVD3RH7z6pv/dSrBi+3j3rk=",
+        "maxParticipants": 5000,
+        "batchSize": 100,
+        "delay": 3000,
+        "filterInactiveUsers": true
+      },
+      "sessionId": "session_1748937814226_bhkjd2fvl"
+    },
+    "datetime": "03.06.2025, 14:03:34"
+  },
+  {
+    "timestamp": "2025-06-03T08:03:34.251Z",
+    "sessionId": "session_1748937814226_bhkjd2fvl",
+    "level": "INFO",
+    "message": "🔌 Подключение к Telegram API (без прокси)...",
+    "data": null,
+    "datetime": "03.06.2025, 14:03:34"
+  },
+  {
+    "timestamp": "2025-06-03T08:03:34.723Z",
+    "sessionId": "session_1748937814226_bhkjd2fvl",
+    "level": "SUCCESS",
+    "message": "✅ Подключение к Telegram API успешно",
+    "data": null,
+    "datetime": "03.06.2025, 14:03:34"
+  },
+  {
+    "timestamp": "2025-06-03T08:03:34.725Z",
+    "sessionId": "session_1748937814226_bhkjd2fvl",
+    "level": "INFO",
+    "message": "📋 Получение информации о канале",
+    "data": {
+      "channelUrl": "@test_hot_tours"
+    },
+    "datetime": "03.06.2025, 14:03:34"
+  },
+  {
+    "timestamp": "2025-06-03T08:03:34.847Z",
+    "sessionId": "session_1748937814226_bhkjd2fvl",
+    "level": "SUCCESS",
+    "message": "✅ Информация о канале получена",
+    "data": {
+      "id": "2570477806",
+      "title": "test hot tours",
+      "username": "test_hot_tours",
+      "participantsCount": 0,
+      "about": "",
+      "isChannel": true,
+      "isGroup": false
+    },
+    "datetime": "03.06.2025, 14:03:34"
+  },
+  {
+    "timestamp": "2025-06-03T08:03:34.848Z",
+    "sessionId": "session_1748937814226_bhkjd2fvl",
+    "level": "INFO",
+    "message": "📊 Информация о канале",
+    "data": {
+      "id": "2570477806",
+      "title": "test hot tours",
+      "username": "test_hot_tours",
+      "participantsCount": 0,
+      "about": "",
+      "isChannel": true,
+      "isGroup": false
+    },
+    "datetime": "03.06.2025, 14:03:34"
+  },
+  {
+    "timestamp": "2025-06-03T08:03:34.849Z",
+    "sessionId": "session_1748937814226_bhkjd2fvl",
+    "level": "INFO",
+    "message": "👥 Начало получения участников канала",
+    "data": {
+      "limit": 100,
+      "maxTotal": 5000,
+      "delay": 3000
+    },
+    "datetime": "03.06.2025, 14:03:34"
+  },
+  {
+    "timestamp": "2025-06-03T08:03:34.850Z",
+    "sessionId": "session_1748937814226_bhkjd2fvl",
+    "level": "INFO",
+    "message": "📥 Запрос участников: offset=0, limit=100",
+    "data": null,
+    "datetime": "03.06.2025, 14:03:34"
+  },
+  {
+    "timestamp": "2025-06-03T08:03:34.968Z",
+    "sessionId": "session_1748937814226_bhkjd2fvl",
+    "level": "WARNING",
+    "message": "⚠️ Ошибка при получении порции участников",
+    "data": {
+      "offset": 0,
+      "error": "400: CHAT_ADMIN_REQUIRED (caused by channels.GetParticipants)"
+    },
+    "datetime": "03.06.2025, 14:03:34"
+  },
+  {
+    "timestamp": "2025-06-03T08:03:40.983Z",
+    "sessionId": "session_1748937814226_bhkjd2fvl",
+    "level": "ERROR",
+    "message": "❌ Ошибка получения участников",
+    "data": {
+      "error": "400: CHAT_ADMIN_REQUIRED (caused by channels.GetParticipants)"
+    },
+    "datetime": "03.06.2025, 14:03:40"
+  },
+  {
+    "timestamp": "2025-06-03T08:03:40.984Z",
+    "sessionId": "session_1748937814226_bhkjd2fvl",
+    "level": "ERROR",
+    "message": "❌ Критическая ошибка парсинга",
+    "data": {
+      "channelUrl": "@test_hot_tours",
+      "error": "400: CHAT_ADMIN_REQUIRED (caused by channels.GetParticipants)"
+    },
+    "datetime": "03.06.2025, 14:03:40"
+  },
+  {
+    "timestamp": "2025-06-03T08:03:40.986Z",
+    "sessionId": "session_1748937814226_bhkjd2fvl",
+    "level": "INFO",
+    "message": "🔌 Отключение от Telegram API",
+    "data": null,
+    "datetime": "03.06.2025, 14:03:40"
+  }
+]

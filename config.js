@@ -11,6 +11,7 @@ module.exports = {
   SUBSCRIBE_HOST: process.env.SUBSCRIBE_HOST,
   BOT_TOKEN: process.env.BOT_TOKEN,
   CHANNEL_ID: process.env.CHANNEL_ID,
+  TELEGRAM_SESSION: process.env.TELEGRAM_SESSION,
   TELEGRAM_API_ID: process.env.TELEGRAM_API_ID,
   TELEGRAM_API_HASH: process.env.TELEGRAM_API_HASH,
   TELEGRAM_PHONE: process.env.TELEGRAM_PHONE
