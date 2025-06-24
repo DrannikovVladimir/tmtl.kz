@@ -1,0 +1,22 @@
+[
+  {
+    "id": "mcaddhyl1dt549f57e6",
+    "userId": 6027098142,
+    "userName": "timetotravel_krg",
+    "firstName": "Турагентство \"Time to Travel\" Караганда",
+    "phoneNumber": "+77078863633",
+    "requestedAt": "2025-06-24T10:15:24.717Z",
+    "status": "new",
+    "timestamp": "2025-06-24T10:15:24.717Z"
+  },
+  {
+    "id": "mcadp7au2ab7lh87vow",
+    "userId": 838868954,
+    "userName": "vladimirDrannikov",
+    "firstName": "Vladimir",
+    "phoneNumber": "+77028883633",
+    "requestedAt": "2025-06-24T10:24:30.774Z",
+    "status": "new",
+    "timestamp": "2025-06-24T10:24:30.774Z"
+  }
+]

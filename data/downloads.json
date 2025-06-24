@@ -1,0 +1,50 @@
+[
+  {
+    "userId": 6027098142,
+    "userName": "timetotravel_krg",
+    "downloadedAt": "2025-06-24T07:04:03.745Z",
+    "source": "telegram_bot"
+  },
+  {
+    "userId": 838868954,
+    "userName": "vladimirDrannikov",
+    "downloadedAt": "2025-06-24T07:09:59.167Z",
+    "source": "telegram_bot"
+  },
+  {
+    "userId": 838868954,
+    "userName": "vladimirDrannikov",
+    "downloadedAt": "2025-06-24T09:16:59.192Z",
+    "source": "telegram_bot"
+  },
+  {
+    "userId": 838868954,
+    "userName": "vladimirDrannikov",
+    "downloadedAt": "2025-06-24T09:30:07.928Z",
+    "source": "telegram_bot"
+  },
+  {
+    "id": "mcacw9krjqjuyq94nz",
+    "userId": 6027098142,
+    "userName": "timetotravel_krg",
+    "downloadedAt": "2025-06-24T10:02:00.699Z",
+    "source": "telegram_bot",
+    "timestamp": "2025-06-24T10:02:00.699Z"
+  },
+  {
+    "id": "mcad11x2ro3y2f3yyn8",
+    "userId": 6027098142,
+    "userName": "timetotravel_krg",
+    "downloadedAt": "2025-06-24T10:05:44.054Z",
+    "source": "telegram_bot",
+    "timestamp": "2025-06-24T10:05:44.055Z"
+  },
+  {
+    "id": "mcadp0jq8w94jd7tdbw",
+    "userId": 838868954,
+    "userName": "vladimirDrannikov",
+    "downloadedAt": "2025-06-24T10:24:22.022Z",
+    "source": "telegram_bot",
+    "timestamp": "2025-06-24T10:24:22.022Z"
+  }
+]
