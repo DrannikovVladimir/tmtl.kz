@@ -1,7 +1,7 @@
 // bot/handlers/startHandler.js
 
 const { welcomeMessage, subscribeMessage } = require('../templates/messages');
-const { subscribeKeyboard } = require('../templates/keyboards');
+const { subscribeKeyboard, mainMenuKeyboard } = require('../templates/keyboards');
 
 /**
  * Обработчик команды /start
@@ -33,6 +33,17 @@ const handleStart = async (bot, msg, services) => {
       // Отправляем файл
       console.log(`📤 Отправляем файл пользователю ${userName}`);
       await fileService.sendLeadMagnetFile(bot, chatId, userId, userName);
+      
+      // НОВОЕ: Показываем главное меню после успешной отправки файла
+      setTimeout(async () => {
+        await bot.sendMessage(chatId, 
+          '🌍 Выберите интересующее направление или воспользуйтесь меню:',
+          {
+            reply_markup: mainMenuKeyboard
+          }
+        );
+        console.log(`📋 Главное меню отправлено пользователю ${userName}`);
+      }, 8000); // Показываем меню через 8 секунд после старта
       
     } else {
       // Пользователь не подписан - показываем сообщение с кнопками подписки

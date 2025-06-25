@@ -65,8 +65,48 @@ const callbackKeyboard = {
   one_time_keyboard: true
 };
 
-// Inline клавиатура с основными действиями (для будущего меню)
+// НОВОЕ: Главное меню с популярными направлениями
 const mainMenuKeyboard = {
+  keyboard: [
+    [
+      {
+        text: '🇦🇪 ОАЭ'
+      },
+      {
+        text: '🇪🇬 Египет'
+      }
+    ],
+    [
+      {
+        text: '🇹🇭 Таиланд'
+      },
+      {
+        text: '🇹🇷 Турция'
+      }
+    ],
+    [
+      {
+        text: '🇻🇳 Вьетнам'
+      },
+      {
+        text: '🇲🇻 Мальдивы'
+      }
+    ],
+    [
+      {
+        text: '📞 Связаться'
+      },
+      {
+        text: '🌍 Все туры'
+      }
+    ]
+  ],
+  resize_keyboard: true,
+  persistent: true
+};
+
+// Inline клавиатура с основными действиями (для будущего меню)
+const actionMenuKeyboard = {
   inline_keyboard: [
     [
       {
@@ -175,6 +215,7 @@ module.exports = {
   loadingKeyboard,
   callbackKeyboard,
   mainMenuKeyboard,
+  actionMenuKeyboard,
   quickActionsKeyboard,
   removeKeyboard,
   socialKeyboard,

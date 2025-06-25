@@ -1,7 +1,7 @@
 // bot/handlers/callbackHandler.js
 
 const { successMessage, callbackRequestMessage } = require('../templates/messages');
-const { callbackKeyboard } = require('../templates/keyboards');
+const { callbackKeyboard, mainMenuKeyboard } = require('../templates/keyboards');
 
 /**
  * Обработчик inline кнопок
@@ -37,6 +37,17 @@ const handleCallbackQuery = async (bot, query, services) => {
         }, 5000);
         
         await fileService.sendLeadMagnetFile(bot, chatId, userId, userName);
+        
+        // НОВОЕ: Показываем главное меню после подписки и получения файла
+        setTimeout(async () => {
+          await bot.sendMessage(chatId, 
+            '🌍 Теперь выберите интересующее направление:',
+            {
+              reply_markup: mainMenuKeyboard
+            }
+          );
+          console.log(`📋 Главное меню отправлено пользователю ${userName} после подписки`);
+        }, 8000);
         
         console.log(`✅ Пользователь ${userName} получил файл после повторной проверки`);
         

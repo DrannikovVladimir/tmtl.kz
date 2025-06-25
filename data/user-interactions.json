@@ -25,5 +25,32 @@
     "type": "start_command",
     "messageId": 7,
     "timestamp": "2025-06-25T12:11:45.550Z"
+  },
+  {
+    "id": "mcbx7ybapwrhl6kgy9",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 11,
+    "timestamp": "2025-06-25T12:18:44.470Z"
+  },
+  {
+    "id": "mcbxb5wj5wxjuk32gpn",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 15,
+    "timestamp": "2025-06-25T12:21:14.276Z"
+  },
+  {
+    "id": "mcbxes4peg9g305c8pp",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 19,
+    "timestamp": "2025-06-25T12:24:03.049Z"
   }
 ]
