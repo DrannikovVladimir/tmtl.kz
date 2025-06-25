@@ -33,8 +33,10 @@ class FileService {
         return false;
       }
       
-      // Отправляем файл с правильным content-type
-      await bot.sendDocument(chatId, this.leadMagnetPath, {
+      // ИСПРАВЛЕНИЕ: Используем правильный формат для отправки документа
+      const document = fs.createReadStream(this.leadMagnetPath);
+      
+      await bot.sendDocument(chatId, document, {
         caption: '📖 Путеводитель по горящим турам\n\n🔥 Сохраните и пользуйтесь на здоровье!\n\n📲 Вопросы? Пишите: +7 (707) 886 36 33'
       }, {
         filename: 'putevoditel.pdf',
@@ -54,10 +56,34 @@ class FileService {
       
     } catch (error) {
       console.error('❌ Ошибка при отправке файла:', error);
-      await bot.sendMessage(chatId, 
-        '😕 Ошибка при отправке файла. Попробуйте позже или обратитесь к менеджеру: +7 (707) 886 36 33'
-      );
-      return false;
+      
+      // Попытка альтернативного способа отправки
+      try {
+        console.log('🔄 Попытка альтернативного способа отправки...');
+        
+        await bot.sendDocument(chatId, this.leadMagnetPath, {
+          caption: '📖 Путеводитель по горящим турам\n\n🔥 Сохраните и пользуйтесь на здоровье!\n\n📲 Вопросы? Пишите: +7 (707) 886 36 33'
+        });
+        
+        // Записываем аналитику
+        analytics.recordDownload({
+          userId,
+          userName,
+          downloadedAt: new Date().toISOString(),
+          source: 'telegram_bot'
+        });
+        
+        console.log(`✅ Файл отправлен альтернативным способом пользователю ${userName}`);
+        return true;
+        
+      } catch (alternativeError) {
+        console.error('❌ Альтернативный способ тоже не сработал:', alternativeError);
+        
+        await bot.sendMessage(chatId, 
+          '😕 Ошибка при отправке файла. Попробуйте позже или обратитесь к менеджеру: +7 (707) 886 36 33'
+        );
+        return false;
+      }
     }
   }
 
@@ -69,7 +95,7 @@ class FileService {
   async sendLoadingMessage(bot, chatId) {
     try {
       await bot.sendMessage(chatId, loadingMessage, {
-        parse_mode: 'Markdown',
+        parse_mode: 'HTML',
         reply_markup: loadingKeyboard,
         disable_web_page_preview: true
       });

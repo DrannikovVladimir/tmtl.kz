@@ -52,5 +52,154 @@
     "type": "message",
     "messageId": 19,
     "timestamp": "2025-06-25T12:24:03.049Z"
+  },
+  {
+    "id": "mcbxo89ru5efu7nlqna",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 21,
+    "timestamp": "2025-06-25T12:31:23.871Z"
+  },
+  {
+    "id": "mcbxxshhzx5nag65rws",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 25,
+    "timestamp": "2025-06-25T12:38:49.973Z"
+  },
+  {
+    "id": "mcbygjqsa5w5par8msl",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 30,
+    "timestamp": "2025-06-25T12:53:25.108Z"
+  },
+  {
+    "id": "mcbyi7t0eooakruhm3l",
+    "userId": 8016878056,
+    "userName": "@tmtl_kz_bot",
+    "chatId": 838868954,
+    "type": "callback_query",
+    "messageId": 32,
+    "data": "request_callback",
+    "timestamp": "2025-06-25T12:54:42.948Z"
+  },
+  {
+    "id": "mcbyia0o651u8u9r3g8",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 36,
+    "timestamp": "2025-06-25T12:54:45.816Z"
+  },
+  {
+    "id": "mcbymy8sruzoekyzdwj",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 38,
+    "timestamp": "2025-06-25T12:58:23.836Z"
+  },
+  {
+    "id": "mcbymzncefdtb1fzt9",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 40,
+    "timestamp": "2025-06-25T12:58:25.657Z"
+  },
+  {
+    "id": "mcbypk7vcspltoy99v",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 42,
+    "timestamp": "2025-06-25T13:00:25.627Z"
+  },
+  {
+    "id": "mcbypw1851k2l6fucp7",
+    "userId": 8016878056,
+    "userName": "@tmtl_kz_bot",
+    "chatId": 838868954,
+    "type": "callback_query",
+    "messageId": 44,
+    "data": "request_callback",
+    "timestamp": "2025-06-25T13:00:40.940Z"
+  },
+  {
+    "id": "mcbypxth5659hcorlxn",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 48,
+    "timestamp": "2025-06-25T13:00:43.253Z"
+  },
+  {
+    "id": "mcbyu222wb535mzvtr",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 50,
+    "timestamp": "2025-06-25T13:03:55.370Z"
+  },
+  {
+    "id": "mcbyvnf65k7tslb0sq",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 55,
+    "timestamp": "2025-06-25T13:05:09.714Z"
+  },
+  {
+    "id": "mcbywbtbfyrh9kjfsym",
+    "userId": 8016878056,
+    "userName": "@tmtl_kz_bot",
+    "chatId": 838868954,
+    "type": "callback_query",
+    "messageId": 56,
+    "data": "check_subscription",
+    "timestamp": "2025-06-25T13:05:41.327Z"
+  },
+  {
+    "id": "mcbz4tejlhvgcbigxj8",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 61,
+    "timestamp": "2025-06-25T13:12:17.371Z"
+  },
+  {
+    "id": "mcbz50lwshx7skpj3iq",
+    "userId": 8016878056,
+    "userName": "@tmtl_kz_bot",
+    "chatId": 838868954,
+    "type": "callback_query",
+    "messageId": 62,
+    "data": "check_subscription",
+    "timestamp": "2025-06-25T13:12:26.708Z"
+  },
+  {
+    "id": "mcbz5av6oi3yeh6fva",
+    "userId": 8016878056,
+    "userName": "@tmtl_kz_bot",
+    "chatId": 838868954,
+    "type": "callback_query",
+    "messageId": 62,
+    "data": "check_subscription",
+    "timestamp": "2025-06-25T13:12:40.002Z"
   }
 ]
