@@ -25,52 +25,38 @@ class NotificationService {
         minute: '2-digit'
       });
 
-      // HTML разметка - просто и надежно
+      // Экранируем HTML символы
+      const escapeHtml = (text) => {
+        if (!text) return '';
+        return text.toString()
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+      };
+
+      // Простое сообщение без HTML разметки
       const notificationMessage = `
-🔔 <b>Новая заявка на обратный звонок!</b>
+🔔 Новая заявка на обратный звонок!
 
-👤 <b>Клиент:</b> ${data.firstName} ${data.lastName || ''}
-📞 <b>Телефон:</b> <code>${data.phoneNumber}</code>
-👤 <b>Username:</b> ${data.userName ? '@' + data.userName : 'не указан'}
-🆔 <b>ID:</b> <code>${data.userId}</code>
-🕐 <b>Время:</b> ${timeString}
+👤 Клиент: ${escapeHtml(data.firstName)} ${escapeHtml(data.lastName || '')}
+📞 Телефон: ${data.phoneNumber}
+👤 Username: ${data.userName ? '@' + data.userName : 'не указан'}
+🆔 ID: ${data.userId}
+🕐 Время: ${timeString}
 
-💡 <b>Действия:</b>
+💡 Действия:
 • Позвонить клиенту
 • Уточнить потребности
 • Предложить подходящие туры
       `;
 
-      await bot.sendMessage(this.adminChatId, notificationMessage, {
-        parse_mode: 'HTML'
-      });
+      await bot.sendMessage(this.adminChatId, notificationMessage);
       
       console.log(`🔔 Уведомление отправлено администратору`);
       
     } catch (error) {
       console.error('❌ Ошибка при отправке уведомления администратору:', error);
-      
-      // Если HTML не работает, отправляем без форматирования
-      try {
-        const simpleMessage = `
-🔔 Новая заявка на обратный звонок!
-
-Клиент: ${data.firstName} ${data.lastName || ''}
-Телефон: ${data.phoneNumber}
-Username: ${data.userName ? '@' + data.userName : 'не указан'}
-ID: ${data.userId}
-Время: ${timeString}
-
-Позвонить клиенту и предложить туры.
-        `;
-
-        await bot.sendMessage(this.adminChatId, simpleMessage);
-        console.log(`🔔 Простое уведомление отправлено администратору`);
-        
-      } catch (fallbackError) {
-        console.error('❌ Критическая ошибка уведомлений:', fallbackError);
-        console.log('📝 Данные заявки для ручной обработки:', JSON.stringify(data, null, 2));
-      }
+      console.log('📝 Данные заявки для ручной обработки:', JSON.stringify(data, null, 2));
     }
   }
 
