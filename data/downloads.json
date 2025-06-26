@@ -94,5 +94,29 @@
     "downloadedAt": "2025-06-25T13:12:50.205Z",
     "source": "telegram_bot",
     "timestamp": "2025-06-25T13:12:50.206Z"
+  },
+  {
+    "id": "mccz58qfsxf3st5e5j",
+    "userId": 838868954,
+    "userName": "vladimirDrannikov",
+    "downloadedAt": "2025-06-26T06:00:23.415Z",
+    "source": "telegram_bot",
+    "timestamp": "2025-06-26T06:00:23.415Z"
+  },
+  {
+    "id": "mcczhi3ywijlvycv1pc",
+    "userId": 838868954,
+    "userName": "vladimirDrannikov",
+    "downloadedAt": "2025-06-26T06:09:55.438Z",
+    "source": "telegram_bot",
+    "timestamp": "2025-06-26T06:09:55.438Z"
+  },
+  {
+    "id": "mcczqd2d6osxwm5nhr5",
+    "userId": 6027098142,
+    "userName": "timetotravel_krg",
+    "downloadedAt": "2025-06-26T06:16:48.805Z",
+    "source": "telegram_bot",
+    "timestamp": "2025-06-26T06:16:48.805Z"
   }
 ]

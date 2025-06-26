@@ -15,11 +15,11 @@ const subMailer = async ({ email }) => {
     const message = {
       from: 'Турагентство "Time to Travel" Караганда | <subscription@tmtl.kz>',
       to: email,
-      subject: 'Добро пожаловать в мир путешествий с Time to Travel!',
+      subject: 'Добро пожаловать в мир путешествий с турагентством "Time to Travel"!',
       html: emailTemplate(email),
       attachments: [
         {
-          filename: 'Путеводитель.pdf',
+          filename: 'Putevoditel.pdf',
           content: fileContent
         }
       ]
