@@ -69,7 +69,7 @@ const handleContact = async (bot, msg, notificationService) => {
     `;
     
     await bot.sendMessage(chatId, confirmationMessage, {
-      reply_markup: { remove_keyboard: true }
+      reply_markup: mainMenuKeyboard
     });
     
     console.log(`✅ Заявка на обратный звонок обработана для ${userName}`);
