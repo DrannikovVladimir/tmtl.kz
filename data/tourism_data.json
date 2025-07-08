@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2025-07-08T11:09:05.601Z",
+  "updatedAt": "2025-07-08T12:11:56.608Z",
   "totalTours": 29,
   "cities": [
     "almaty",
@@ -180,10 +180,10 @@
       },
       {
         "country": "Черногория",
-        "date": "12 июл",
-        "price": "481 275",
+        "date": "19 июл",
+        "price": "465 750",
         "currency": "ТНГ",
-        "priceNumeric": 481275,
+        "priceNumeric": 465750,
         "temperature": {
           "air": {
             "value": "+28",
@@ -197,10 +197,10 @@
       },
       {
         "country": "Мальдивы",
-        "date": "16 июл",
-        "price": "530 376",
+        "date": "23 июл",
+        "price": "503 976",
         "currency": "ТНГ",
-        "priceNumeric": 530376,
+        "priceNumeric": 503976,
         "temperature": {
           "air": {
             "value": "+30",
@@ -300,6 +300,23 @@
         }
       },
       {
+        "country": "Египет",
+        "date": "9 июл",
+        "price": "227 137",
+        "currency": "ТНГ",
+        "priceNumeric": 227137,
+        "temperature": {
+          "air": {
+            "value": "+33",
+            "title": "Температура воздуха днем"
+          },
+          "water": {
+            "value": "+28",
+            "title": "Температура воды"
+          }
+        }
+      },
+      {
         "country": "Казахстан",
         "date": "5 авг",
         "price": "247 163",
@@ -334,23 +351,6 @@
         }
       },
       {
-        "country": "Египет",
-        "date": "7 авг",
-        "price": "254 805",
-        "currency": "ТНГ",
-        "priceNumeric": 254805,
-        "temperature": {
-          "air": {
-            "value": "+33",
-            "title": "Температура воздуха днем"
-          },
-          "water": {
-            "value": "+28",
-            "title": "Температура воды"
-          }
-        }
-      },
-      {
         "country": "Турция",
         "date": "23 июл",
         "price": "257 715",
@@ -370,9 +370,9 @@
       {
         "country": "Грузия",
         "date": "30 июл",
-        "price": "270 072",
+        "price": "270 864",
         "currency": "ТНГ",
-        "priceNumeric": 270072,
+        "priceNumeric": 270864,
         "temperature": {
           "air": {
             "value": "+25",
@@ -404,9 +404,9 @@
       {
         "country": "Китай",
         "date": "10 июл",
-        "price": "305 660",
+        "price": "311 457",
         "currency": "ТНГ",
-        "priceNumeric": 305660,
+        "priceNumeric": 311457,
         "temperature": {
           "air": {
             "value": "+33",
@@ -437,7 +437,7 @@
       },
       {
         "country": "Чехия",
-        "date": "22 июл",
+        "date": "15 июл",
         "price": "438 510",
         "currency": "ТНГ",
         "priceNumeric": 438510,
