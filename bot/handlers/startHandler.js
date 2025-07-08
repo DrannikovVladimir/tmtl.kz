@@ -2,6 +2,7 @@
 
 const { welcomeMessage, subscribeMessage } = require('../templates/messages');
 const { subscribeKeyboard, mainMenuKeyboard } = require('../templates/keyboards');
+const { safeSendMessage } = require('../utils/helpers'); // НОВОЕ: импорт
 
 /**
  * Обработчик команды /start
@@ -23,7 +24,7 @@ const handleStart = async (bot, msg, services) => {
     
     if (subscriptionResult.isSubscribed) {
       // Пользователь подписан - отправляем приветствие и файл
-      await bot.sendMessage(chatId, welcomeMessage);
+      await safeSendMessage(bot, chatId, welcomeMessage); // БЕЗОПАСНАЯ отправка
       
       // ИСПРАВЛЕНО: Последовательные таймауты
       // Отправляем сообщение с полезными ссылками через 5 секунд
@@ -32,7 +33,7 @@ const handleStart = async (bot, msg, services) => {
         
         // Показываем главное меню через 2 секунды после промежуточного сообщения
         setTimeout(async () => {
-          await bot.sendMessage(chatId, 
+          await safeSendMessage(bot, chatId, // БЕЗОПАСНАЯ отправка
             '🌍 Выберите интересующее направление или воспользуйтесь меню которые находится ниже',
             {
               reply_markup: mainMenuKeyboard
@@ -49,7 +50,7 @@ const handleStart = async (bot, msg, services) => {
       
     } else {
       // Пользователь не подписан - показываем сообщение с кнопками подписки
-      await bot.sendMessage(chatId, subscribeMessage, {
+      await safeSendMessage(bot, chatId, subscribeMessage, { // БЕЗОПАСНАЯ отправка
         reply_markup: subscribeKeyboard
       });
       
@@ -67,7 +68,7 @@ const handleStart = async (bot, msg, services) => {
 📲 Если проблема повторяется, пишите: +7 (707) 886 36 33
     `;
     
-    await bot.sendMessage(chatId, errorMessage);
+    await safeSendMessage(bot, chatId, errorMessage); // БЕЗОПАСНАЯ отправка
   }
 };
 

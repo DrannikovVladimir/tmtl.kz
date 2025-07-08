@@ -266,5 +266,608 @@
     "type": "message",
     "messageId": 86,
     "timestamp": "2025-06-26T06:17:48.294Z"
+  },
+  {
+    "id": "mcu6vzahk3ynpfapxfk",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "help_command",
+    "messageId": 166,
+    "timestamp": "2025-07-08T07:09:13.194Z"
+  },
+  {
+    "id": "mcu6vzakiql46hay78j",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "help_command",
+    "messageId": 167,
+    "timestamp": "2025-07-08T07:09:13.196Z"
+  },
+  {
+    "id": "mcu6vzamuvmm9gadb39",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 168,
+    "timestamp": "2025-07-08T07:09:13.198Z"
+  },
+  {
+    "id": "mcu6vzaoqhx45cyeoj",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 169,
+    "timestamp": "2025-07-08T07:09:13.200Z"
+  },
+  {
+    "id": "mcu6vzaq4a42yt2qv9y",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 170,
+    "timestamp": "2025-07-08T07:09:13.202Z"
+  },
+  {
+    "id": "mcu6vzarwn4drljunn9",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 171,
+    "timestamp": "2025-07-08T07:09:13.203Z"
+  },
+  {
+    "id": "mcu6vzatzmpvsmtqf4",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 172,
+    "timestamp": "2025-07-08T07:09:13.205Z"
+  },
+  {
+    "id": "mcu6vzav5ly618expgq",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 173,
+    "timestamp": "2025-07-08T07:09:13.207Z"
+  },
+  {
+    "id": "mcu6vzawkz69bkfvg9g",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 174,
+    "timestamp": "2025-07-08T07:09:13.208Z"
+  },
+  {
+    "id": "mcu6vzayhgiqhk7q5lu",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 175,
+    "timestamp": "2025-07-08T07:09:13.210Z"
+  },
+  {
+    "id": "mcu6vzazv0a14ysvpb",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "start_command",
+    "messageId": 176,
+    "timestamp": "2025-07-08T07:09:13.211Z"
+  },
+  {
+    "id": "mcu6vzb2s70prj40s4",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 177,
+    "timestamp": "2025-07-08T07:09:13.214Z"
+  },
+  {
+    "id": "mcu6vzb3wfsfzc36gy",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 178,
+    "timestamp": "2025-07-08T07:09:13.215Z"
+  },
+  {
+    "id": "mcu6vzb5i9e229r068o",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 179,
+    "timestamp": "2025-07-08T07:09:13.217Z"
+  },
+  {
+    "id": "mcu6vzb6f64mi1q525",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 180,
+    "timestamp": "2025-07-08T07:09:13.218Z"
+  },
+  {
+    "id": "mcu6vzb8y019mmzth2h",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 181,
+    "timestamp": "2025-07-08T07:09:13.220Z"
+  },
+  {
+    "id": "mcu6vzb95wg2a1t0bfd",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 182,
+    "timestamp": "2025-07-08T07:09:13.221Z"
+  },
+  {
+    "id": "mcu6vzbbinzty37xuz9",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 183,
+    "timestamp": "2025-07-08T07:09:13.223Z"
+  },
+  {
+    "id": "mcu6vzbdsme81db2ihp",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 184,
+    "timestamp": "2025-07-08T07:09:13.225Z"
+  },
+  {
+    "id": "mcu6vzbfojv5jpgbkj",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 185,
+    "timestamp": "2025-07-08T07:09:13.227Z"
+  },
+  {
+    "id": "mcu6vzbhcp5pw3gyuwl",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 186,
+    "timestamp": "2025-07-08T07:09:13.229Z"
+  },
+  {
+    "id": "mcu6vzbj7n26tdsvc3g",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 187,
+    "timestamp": "2025-07-08T07:09:13.231Z"
+  },
+  {
+    "id": "mcu7mkf51sz57hj4t9e",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "help_command",
+    "messageId": 166,
+    "timestamp": "2025-07-08T07:29:53.634Z"
+  },
+  {
+    "id": "mcu7mkf8chr73y01zo",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "help_command",
+    "messageId": 167,
+    "timestamp": "2025-07-08T07:29:53.636Z"
+  },
+  {
+    "id": "mcu7mkfa6jb9nqkjxvg",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 168,
+    "timestamp": "2025-07-08T07:29:53.638Z"
+  },
+  {
+    "id": "mcu7mkfc0c9y8husds8",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 169,
+    "timestamp": "2025-07-08T07:29:53.640Z"
+  },
+  {
+    "id": "mcu7mkfdq8le22swwzc",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 170,
+    "timestamp": "2025-07-08T07:29:53.641Z"
+  },
+  {
+    "id": "mcu7mkffi7tuw0k1xs",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 171,
+    "timestamp": "2025-07-08T07:29:53.643Z"
+  },
+  {
+    "id": "mcu7mkfgnf9ykbnj6m",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 172,
+    "timestamp": "2025-07-08T07:29:53.644Z"
+  },
+  {
+    "id": "mcu7mkfiex34xop6rn6",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 173,
+    "timestamp": "2025-07-08T07:29:53.646Z"
+  },
+  {
+    "id": "mcu7mkfj6mekv00pq6a",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 174,
+    "timestamp": "2025-07-08T07:29:53.647Z"
+  },
+  {
+    "id": "mcu7mkfle3cffd8zewn",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 175,
+    "timestamp": "2025-07-08T07:29:53.649Z"
+  },
+  {
+    "id": "mcu7mkfn89pxh3ujxfq",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "start_command",
+    "messageId": 176,
+    "timestamp": "2025-07-08T07:29:53.651Z"
+  },
+  {
+    "id": "mcu7mkfp05daiu8lme7c",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 177,
+    "timestamp": "2025-07-08T07:29:53.653Z"
+  },
+  {
+    "id": "mcu7mkfrjbf5utxwbj9",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 178,
+    "timestamp": "2025-07-08T07:29:53.655Z"
+  },
+  {
+    "id": "mcu7mkfsdh2z86y1qol",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 179,
+    "timestamp": "2025-07-08T07:29:53.656Z"
+  },
+  {
+    "id": "mcu7mkftx5tkov7w0tn",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 180,
+    "timestamp": "2025-07-08T07:29:53.657Z"
+  },
+  {
+    "id": "mcu7mkfvoijsgvaly1",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 181,
+    "timestamp": "2025-07-08T07:29:53.659Z"
+  },
+  {
+    "id": "mcu7mkfwvn4405bq8rk",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 182,
+    "timestamp": "2025-07-08T07:29:53.660Z"
+  },
+  {
+    "id": "mcu7mkfy5xm64laxxhw",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 183,
+    "timestamp": "2025-07-08T07:29:53.662Z"
+  },
+  {
+    "id": "mcu7mkfzod4keg1dh28",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 184,
+    "timestamp": "2025-07-08T07:29:53.663Z"
+  },
+  {
+    "id": "mcu7mkg1xuolh6td6ho",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 185,
+    "timestamp": "2025-07-08T07:29:53.665Z"
+  },
+  {
+    "id": "mcu7mkg4lugvk4eh31",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 186,
+    "timestamp": "2025-07-08T07:29:53.668Z"
+  },
+  {
+    "id": "mcu7mkg6iu8adh7r57a",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 187,
+    "timestamp": "2025-07-08T07:29:53.670Z"
+  },
+  {
+    "id": "mcu9tkxlwtbrr4i5pt",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "help_command",
+    "messageId": 166,
+    "timestamp": "2025-07-08T08:31:20.121Z"
+  },
+  {
+    "id": "mcu9tkxoxj9iv7lbll",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "help_command",
+    "messageId": 167,
+    "timestamp": "2025-07-08T08:31:20.124Z"
+  },
+  {
+    "id": "mcu9tkxqqc4gnadzn3",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 168,
+    "timestamp": "2025-07-08T08:31:20.126Z"
+  },
+  {
+    "id": "mcu9tkxsxev2lq2f68s",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 169,
+    "timestamp": "2025-07-08T08:31:20.128Z"
+  },
+  {
+    "id": "mcu9tkxuc2cuppx4kdi",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 170,
+    "timestamp": "2025-07-08T08:31:20.130Z"
+  },
+  {
+    "id": "mcu9tkxwh4nn4w5dmj8",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 171,
+    "timestamp": "2025-07-08T08:31:20.132Z"
+  },
+  {
+    "id": "mcu9tkxxw542533nqjk",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 172,
+    "timestamp": "2025-07-08T08:31:20.133Z"
+  },
+  {
+    "id": "mcu9tkxz3h0p1rf4r37",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 173,
+    "timestamp": "2025-07-08T08:31:20.135Z"
+  },
+  {
+    "id": "mcu9tky1ixbe71ft4c9",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 174,
+    "timestamp": "2025-07-08T08:31:20.137Z"
+  },
+  {
+    "id": "mcu9tky2dakfaao8hn5",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "message",
+    "messageId": 175,
+    "timestamp": "2025-07-08T08:31:20.138Z"
+  },
+  {
+    "id": "mcu9tky42eig0iyn1b9",
+    "userId": 6027098142,
+    "userName": "@timetotravel_krg",
+    "chatId": 6027098142,
+    "type": "start_command",
+    "messageId": 176,
+    "timestamp": "2025-07-08T08:31:20.140Z"
+  },
+  {
+    "id": "mcu9tky6jdaf7anngkq",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 177,
+    "timestamp": "2025-07-08T08:31:20.142Z"
+  },
+  {
+    "id": "mcu9tky7ok3lcte9kkm",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 178,
+    "timestamp": "2025-07-08T08:31:20.143Z"
+  },
+  {
+    "id": "mcu9tky9ijsc935uod",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 179,
+    "timestamp": "2025-07-08T08:31:20.145Z"
+  },
+  {
+    "id": "mcu9tkyayffavf5458b",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 180,
+    "timestamp": "2025-07-08T08:31:20.146Z"
+  },
+  {
+    "id": "mcu9tkycwpx9j2g2be",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 181,
+    "timestamp": "2025-07-08T08:31:20.148Z"
+  },
+  {
+    "id": "mcu9tkye32daxrhxey9",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 182,
+    "timestamp": "2025-07-08T08:31:20.150Z"
+  },
+  {
+    "id": "mcu9tkygxnhlojvlxhi",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 183,
+    "timestamp": "2025-07-08T08:31:20.152Z"
+  },
+  {
+    "id": "mcu9tkyi4w91lm640jl",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 184,
+    "timestamp": "2025-07-08T08:31:20.154Z"
+  },
+  {
+    "id": "mcu9tkylv7jwcaxzi8",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 185,
+    "timestamp": "2025-07-08T08:31:20.157Z"
+  },
+  {
+    "id": "mcu9tkyngsxi5ff9dme",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 186,
+    "timestamp": "2025-07-08T08:31:20.159Z"
+  },
+  {
+    "id": "mcu9tkyp670hw2g20q8",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "start_command",
+    "messageId": 187,
+    "timestamp": "2025-07-08T08:31:20.161Z"
+  },
+  {
+    "id": "mcu9zzrsn4fyckg4e7",
+    "userId": 838868954,
+    "userName": "@vladimirDrannikov",
+    "chatId": 838868954,
+    "type": "message",
+    "messageId": 220,
+    "timestamp": "2025-07-08T08:36:19.288Z"
   }
 ]

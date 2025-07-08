@@ -5,6 +5,7 @@ const path = require('path');
 const analytics = require('../utils/analytics');
 const { loadingMessage } = require('../templates/messages');
 const { loadingKeyboard } = require('../templates/keyboards');
+const { safeSendMessage } = require('../utils/helpers');
 
 /**
  * Сервис для работы с файлами и отправкой контента
@@ -27,7 +28,7 @@ class FileService {
       // Проверяем, существует ли файл
       if (!fs.existsSync(this.leadMagnetPath)) {
         console.error('❌ Файл не найден:', this.leadMagnetPath);
-        await bot.sendMessage(chatId, 
+        await safeSendMessage(bot, chatId, 
           '😕 Извините, файл временно недоступен. Обратитесь к менеджеру: +7 (707) 886 36 33'
         );
         return false;
@@ -79,7 +80,7 @@ class FileService {
       } catch (alternativeError) {
         console.error('❌ Альтернативный способ тоже не сработал:', alternativeError);
         
-        await bot.sendMessage(chatId, 
+        await safeSendMessage(bot, chatId, 
           '😕 Ошибка при отправке файла. Попробуйте позже или обратитесь к менеджеру: +7 (707) 886 36 33'
         );
         return false;
@@ -94,7 +95,7 @@ class FileService {
    */
   async sendLoadingMessage(bot, chatId) {
     try {
-      await bot.sendMessage(chatId, loadingMessage, {
+      await safeSendMessage(bot, chatId, loadingMessage, {
         parse_mode: 'HTML',
         reply_markup: loadingKeyboard,
         disable_web_page_preview: true

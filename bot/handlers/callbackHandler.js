@@ -2,6 +2,7 @@
 
 const { successMessage, callbackRequestMessage } = require('../templates/messages');
 const { callbackKeyboard, mainMenuKeyboard } = require('../templates/keyboards');
+const { safeSendMessage } = require('../utils/helpers'); // НОВОЕ: импорт
 
 /**
  * Обработчик inline кнопок
@@ -29,7 +30,7 @@ const handleCallbackQuery = async (bot, query, services) => {
           { chat_id: chatId, message_id: query.message.message_id }
         );
         
-        await bot.sendMessage(chatId, successMessage);
+        await safeSendMessage(bot, chatId, successMessage); // БЕЗОПАСНАЯ отправка
         
         // Отправляем сообщение с полезными ссылками через 5 секунд
         setTimeout(async () => {
@@ -40,7 +41,7 @@ const handleCallbackQuery = async (bot, query, services) => {
         
         // НОВОЕ: Показываем главное меню после подписки и получения файла
         setTimeout(async () => {
-          await bot.sendMessage(chatId, 
+          await safeSendMessage(bot, chatId, // БЕЗОПАСНАЯ отправка
             '🌍 Теперь выберите интересующее направление:',
             {
               reply_markup: mainMenuKeyboard
@@ -76,7 +77,7 @@ const handleCallbackQuery = async (bot, query, services) => {
     console.log(`📞 Запрос обратного звонка от пользователя ${userName} (ID: ${userId})`);
     
     try {
-      await bot.sendMessage(chatId, callbackRequestMessage, {
+      await safeSendMessage(bot, chatId, callbackRequestMessage, { // БЕЗОПАСНАЯ отправка
         reply_markup: callbackKeyboard
       });
       

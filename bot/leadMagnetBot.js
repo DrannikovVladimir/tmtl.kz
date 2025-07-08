@@ -15,7 +15,7 @@ const { handleMessage } = require('./handlers/messageHandler');
 
 // Импортируем утилиты
 const analytics = require('./utils/analytics');
-const { log, getUserName } = require('./utils/helpers');
+const { log, getUserName, safeSendMessage  } = require('./utils/helpers');
 
 // Импортируем шаблоны
 const { helpMessage, unknownCommandMessage } = require('./templates/messages');
@@ -95,8 +95,8 @@ class LeadMagnetBot {
     // Команда /help
     this.bot.onText(/\/help/, async (msg) => {
       this.recordInteraction(msg, 'help_command');
-      await this.bot.sendMessage(msg.chat.id, helpMessage, {
-        parse_mode: 'Markdown'
+      await safeSendMessage(this.bot, msg.chat.id, helpMessage, {
+        parse_mode: 'HTML'  // ИСПРАВЛЕНО: изменено с Markdown на HTML
       });
     });
 
@@ -121,7 +121,7 @@ class LeadMagnetBot {
       if (msg.text && msg.text.startsWith('/')) {
         // Проверяем неизвестные команды
         if (!this.isKnownCommand(msg.text)) {
-          await this.bot.sendMessage(msg.chat.id, unknownCommandMessage);
+          await safeSendMessage(this.bot, msg.chat.id, unknownCommandMessage);
         }
         return;
       }
@@ -149,19 +149,21 @@ class LeadMagnetBot {
       const result = await this.subscriptionService.checkSubscription(userId);
       
       if (result.isSubscribed) {
-        await this.bot.sendMessage(chatId, 
+        await safeSendMessage(this.bot, chatId, 
           '✅ Отлично! Вы подписаны на канал. Можете получить лид-магнит командой /start'
         );
         log('info', `✅ Пользователь ${userName} подписан`);
       } else {
-        await this.bot.sendMessage(chatId, 
+        await safeSendMessage(this.bot, chatId, 
           `❌ Вы не подписаны на канал ${this.channelId}. Сначала подпишитесь, а затем повторите проверку.`
         );
         log('info', `❌ Пользователь ${userName} не подписан`);
       }
     } catch (error) {
       log('error', 'Ошибка при команде /check:', error);
-      await this.bot.sendMessage(chatId, '❌ Произошла ошибка при проверке подписки. Попробуйте позже.');
+      await safeSendMessage(this.bot, chatId, 
+        '❌ Произошла ошибка при проверке подписки. Попробуйте позже.'
+      );
     }
   }
 

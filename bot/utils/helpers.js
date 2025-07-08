@@ -137,6 +137,76 @@ const escapeMarkdown = (text) => {
 };
 
 /**
+ * НОВОЕ: Экранирует специальные символы HTML
+ * @param {String} text - текст для экранирования
+ * @returns {String} - экранированный текст
+ */
+const escapeHtml = (text) => {
+  if (!text) return '';
+  
+  return text.toString()
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;');
+};
+
+/**
+ * НОВОЕ: Безопасная отправка сообщения с обработкой ошибок разметки
+ * @param {Object} bot - экземпляр Telegram бота
+ * @param {Number} chatId - ID чата
+ * @param {String} text - текст сообщения
+ * @param {Object} options - опции сообщения
+ * @returns {Promise} - результат отправки
+ */
+const safeSendMessage = async (bot, chatId, text, options = {}) => {
+  try {
+    // Сначала пробуем отправить с указанной разметкой
+    return await bot.sendMessage(chatId, text, options);
+  } catch (error) {
+    console.error('❌ Ошибка отправки сообщения с разметкой:', error.message);
+    
+    // Если ошибка связана с разметкой, отправляем без parse_mode
+    if (error.message.includes("can't parse entities") || 
+        error.message.includes("Bad Request")) {
+      console.log('🔄 Повторная отправка без разметки...');
+      
+      const fallbackOptions = { ...options };
+      delete fallbackOptions.parse_mode;
+      
+      try {
+        return await bot.sendMessage(chatId, text, fallbackOptions);
+      } catch (fallbackError) {
+        console.error('❌ Ошибка при повторной отправке:', fallbackError.message);
+        
+        // В крайнем случае отправляем простое сообщение об ошибке
+        return await bot.sendMessage(chatId, 
+          '😕 Произошла ошибка при отправке сообщения. Попробуйте позже или свяжитесь с нами: +7 (707) 886 36 33'
+        );
+      }
+    }
+    
+    throw error;
+  }
+};
+
+/**
+ * НОВОЕ: Безопасная отправка сообщения с экранированием HTML
+ * @param {Object} bot - экземпляр Telegram бота
+ * @param {Number} chatId - ID чата
+ * @param {String} text - текст сообщения (будет экранирован)
+ * @param {Object} options - опции сообщения
+ * @returns {Promise} - результат отправки
+ */
+const safeSendHtmlMessage = async (bot, chatId, text, options = {}) => {
+  const escapedText = escapeHtml(text);
+  const htmlOptions = { ...options, parse_mode: 'HTML' };
+  
+  return await safeSendMessage(bot, chatId, escapedText, htmlOptions);
+};
+
+/**
  * Проверяет, является ли строка валидным URL
  * @param {String} string - строка для проверки
  * @returns {Boolean} - является ли URL валидным
@@ -226,9 +296,12 @@ module.exports = {
   createWhatsAppLink,
   truncateText,
   escapeMarkdown,
+  escapeHtml, // НОВОЕ
   isValidUrl,
   generateRandomString,
   formatFileSize,
   log,
-  isTimeElapsed
+  isTimeElapsed,
+  safeSendMessage, // НОВОЕ
+  safeSendHtmlMessage // НОВОЕ
 };
