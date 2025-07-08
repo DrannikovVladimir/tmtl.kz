@@ -1,11 +1,12 @@
 {
-  "name": "coolwaters.kz",
-  "version": "1.0.0",
+  "name": "timetotravel",
+  "version": "2.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "parse": "node services/tourismParser.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,8 @@
     "express": "^4.18.2",
     "express-robots-txt": "^1.0.0",
     "node-telegram-bot-api": "^0.66.0",
-    "nodemailer": "^6.8.0"
+    "nodemailer": "^6.8.0",
+    "puppeteer": "^24.12.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"

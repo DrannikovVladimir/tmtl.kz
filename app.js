@@ -6,7 +6,7 @@ const cors = require('cors');
 const routes = require('./routes');
 const { PORT } = require('./config');
 // const { bot } = require('./bot');
-const { leadMagnetBot } = require('./bot/leadMagnetBot');
+// const { leadMagnetBot } = require('./bot/leadMagnetBot');
 
 /**
  * Создает и настраивает экземпляр Express-приложения
