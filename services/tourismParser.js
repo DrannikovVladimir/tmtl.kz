@@ -1,6 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
 const path = require('path');
+const emailNotifications = require('./emailNotifications');
 
 class TourismParser {
   constructor() {
@@ -281,10 +282,41 @@ class TourismParser {
       console.log(`📁 Файл: ${filePath}`);
       console.log(`📈 Всего туров: ${Object.values(data).reduce((sum, tours) => sum + tours.length, 0)}`);
       
+      try {
+        const totalTours = Object.values(data).reduce((sum, tours) => sum + tours.length, 0);
+        
+        console.log('📧 Отправляем email уведомление...');
+        
+        if (totalTours < 15) {
+          await emailNotifications.sendLowDataWarning(data);
+        } else {
+          await emailNotifications.sendParsingSuccess(data);
+        }
+        
+        console.log('✅ Email отправлен успешно');
+      } catch (emailError) {
+        console.error('❌ ДЕТАЛЬНАЯ ОШИБКА EMAIL:', emailError.message); // ДОБАВЛЕНО
+        console.error('❌ STACK TRACE:', emailError.stack); // ДОБАВЛЕНО
+        console.error('❌ EMAIL CONFIG:', { // ДОБАВЛЕНО
+          host: process.env.NOTIFICATIONS_HOST,
+          user: process.env.NOTIFICATIONS_EMAIL,
+          adminEmail: process.env.ADMIN_EMAIL
+        });
+      }
+
       return data;
       
     } catch (error) {
       console.error('💥 Фатальная ошибка:', error);
+
+      try {
+        console.log('📧 Отправляем уведомление об ошибке...');
+        await emailNotifications.sendParsingError(error);
+      } catch (emailError) {
+        console.error('❌ Ошибка отправки email об ошибке:', emailError);
+        // Игнорируем, не усугубляем проблему
+      }
+
       throw error;
     }
   }

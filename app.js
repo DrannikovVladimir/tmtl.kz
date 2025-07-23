@@ -5,6 +5,7 @@ const robots = require('express-robots-txt');
 const cors = require('cors');
 const routes = require('./routes');
 const { PORT } = require('./config');
+const scheduler = require('./services/scheduler');
 // const { bot } = require('./bot');
 // const { leadMagnetBot } = require('./bot/leadMagnetBot');
 
@@ -48,4 +49,6 @@ const app = createApp();
 
 app.listen(PORT, () => {
   console.log(`Сервер запущен на порту ${PORT}`);
+
+  scheduler.start();
 });
