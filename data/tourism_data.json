@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2025-07-23T13:31:11.660Z",
+  "updatedAt": "2025-07-23T13:37:45.069Z",
   "totalTours": 29,
   "cities": [
     "almaty",
@@ -146,10 +146,10 @@
       },
       {
         "country": "Таиланд",
-        "date": "26 авг",
-        "price": "332 310",
+        "date": "30 авг",
+        "price": "330 720",
         "currency": "ТНГ",
-        "priceNumeric": 332310,
+        "priceNumeric": 330720,
         "temperature": {
           "air": {
             "value": "+32",
