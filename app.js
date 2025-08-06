@@ -3,9 +3,10 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const robots = require('express-robots-txt');
 const cors = require('cors');
+const compression = require('compression');
 const routes = require('./routes');
 const { PORT } = require('./config');
-const scheduler = require('./services/scheduler');
+// const scheduler = require('./services/scheduler');
 // const { bot } = require('./bot');
 // const { leadMagnetBot } = require('./bot/leadMagnetBot');
 
@@ -15,6 +16,18 @@ const scheduler = require('./services/scheduler');
  */
 function createApp() {
   const app = express();
+
+  app.use(compression({
+    level: 6,
+    threshold: 1024,
+    filter: (req, res) => {
+      // Не сжимаем уже сжатые файлы (изображения, видео)
+      if (req.headers['x-no-compression']) {
+        return false;
+      }
+      return compression.filter(req, res);
+    }
+  }));
 
   // Настройка middleware
   app.use(express.static(path.resolve(__dirname, 'static')));
@@ -50,5 +63,5 @@ const app = createApp();
 app.listen(PORT, () => {
   console.log(`Сервер запущен на порту ${PORT}`);
 
-  scheduler.start();
+  // scheduler.start();
 });
