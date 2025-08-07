@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const robots = require('express-robots-txt');
 const cors = require('cors');
 const compression = require('compression');
+const helmet = require('helmet');
 const routes = require('./routes');
 const { PORT } = require('./config');
 // const scheduler = require('./services/scheduler');
@@ -17,6 +18,13 @@ const { PORT } = require('./config');
 function createApp() {
   const app = express();
 
+  app.use(helmet({
+    // Отключаем CSP пока - может заблокировать существующие скрипты
+    contentSecurityPolicy: false,
+    // Отключаем COEP - может заблокировать внешние ресурсы (React CDN и т.д.)
+    crossOriginEmbedderPolicy: false
+  }));
+
   app.use(compression({
     level: 6,
     threshold: 1024,
@@ -29,8 +37,19 @@ function createApp() {
     }
   }));
 
-  // Настройка middleware
+  // ✨ НОВОЕ: Кэширование картинок на 1 год (они не меняются, только добавляются)
+  app.use('/img', express.static(path.resolve(__dirname, 'static/img'), {
+    maxAge: '30d',
+    setHeaders: (res, filePath) => {
+      console.log(`🖼️  Отдаем картинку с кэшом: ${filePath}`);
+
+      res.set('Cache-Control', 'public, max-age=2592000');
+    }
+  }));
+
+  // Настройка middleware (остальная статика без специального кэширования)
   app.use(express.static(path.resolve(__dirname, 'static')));
+  
   app.use('/libs', express.static(path.resolve(__dirname, 'libs'), {
     setHeaders: (res, filePath) => {
       if (filePath.endsWith('.js')) {
@@ -38,9 +57,29 @@ function createApp() {
       }
     }
   }));
+  
   app.use(express.json());
   app.use(bodyParser.urlencoded({ extended: false }));
-  app.use(cors());
+  app.use(cors({
+    origin: function (origin, callback) {
+      const allowedOrigins = [
+        'https://tmtl.kz',
+        'https://www.tmtl.kz',
+        'http://localhost:3000',
+        undefined // для Postman, мобильных приложений без origin
+      ];
+
+      if (allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        console.log(`🚫 CORS заблокировал запрос с: ${origin}`);
+        callback(new Error('Доступ запрещен политикой CORS'));
+      }
+    },
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
+  }));
 
   // Настройка robots.txt
   app.use(robots({
